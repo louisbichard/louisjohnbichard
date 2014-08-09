@@ -1,3 +1,14 @@
+/* Add pacifico for the title */ 
+
 .pacifico {
   font-family: 'Pacifico', serif;
+}
+
+/* Remove the bullets from list elements */
+
+li {
+    list-style-type: none;
+}
+ul {
+    padding-left: 0px;
 }
