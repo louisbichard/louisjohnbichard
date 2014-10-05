@@ -30,3 +30,6 @@ ul {
     display: table-cell;
     vertical-align: middle;
 }
+.white-font {
+    color: white;
+}
