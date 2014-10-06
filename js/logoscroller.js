@@ -23,7 +23,7 @@
             var currentPosition = $(document).scrollTop();
             if (currentPosition > startPosition && currentPosition < endPosition) {
                 var currentPositionInItem = currentPosition - startPosition;
-                $document_list.scrollLeft(currentPositionInItem * 2);
+                $document_list.scrollLeft(currentPositionInItem * 1.7);
             }
             currentPosition = (currentPosition > 650) ? 650 : currentPosition;
             $leadText.css({
