@@ -1,6 +1,7 @@
 louisjohnbichard
 ================
 
-Personal site
+Personal portfolio site
 
 Including personal CV
+
