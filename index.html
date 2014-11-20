@@ -18,6 +18,9 @@
     <link href="css/freelancer.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 
+    <!-- Animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -40,7 +43,7 @@
 <body id="page-top" class="index">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top animated bounceInDown">
         <!-- Brand and toggle get grouped for better mobile display -->
 
         <div class="navbar-header page-scroll">
@@ -55,7 +58,7 @@
 
         <div class="row">
             <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
-                <h3 class="raleman white-font">Louis John Bichard</h3>
+                <h3 class="raleman">Louis John Bichard</h3>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -92,18 +95,21 @@
     <section class="headerImage">
         <div class="container headerImageText">
             <div class="leadText">
-                <div class="row">
-                    <div class="col-lg-2 col-md-2 col-lg-offset-5 col-md-offset-5">
-                    <img src="img/personal/lou.jpg" height="598" width="598" class="img-responsive img-circle" alt="">
-                </div>
-                </div>
+                <div class="animated bounceInUp">
+                    <div class="row">
+                        <div class="col-sm-4 col-sm-offset-4 col-xs-offset-3 col-xs-6 col-lg-2 col-md-2 col-lg-offset-5 col-md-offset-5">
+                            <img src="img/personal/lou.jpg" height="598" width="598" class="img-responsive img-circle" alt="">
+                        </div>
+                    </div>
 
-                <br>
-                <h2>Louis John Bichard</h2>
-
-                <h4>Inquisition drives my passion for creating & learning</h2>
-                <h4>Immersing myself in the community, continually writing code</h4>
-                <h4>I am a full stack web developer</h4>
+                    <br>
+                    <div class="leadTitles">
+                        <h2>Louis John Bichard</h2>
+                        <h4>Inquisition drives my passion for creating & learning</h4>
+                        <h4>Immersing myself in the community, continually writing code</h4>
+                        <h4>I am a full stack web developer</h4>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -113,18 +119,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-1 text-center">
-                    <h2>Who I am:</h2>
+                    <h2>Who I am</h2>
                     <hr>
                     <p>Hi! I am Louis John Bichard, a web developer and learning enthusiast.</p>
-                    <p>I like to treat my life as an experiment, optimising at any opportunity with regards to my development work, workflows and own personal life. I like to tear apart areas of my life to get them to work with me, not against me ... to work smarter; not harder.</p>
+                    <p>I like to treat my life as an experiment, optimising at any opportunity everything from my development workflow into my own personal life and hobbies.</p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <h2>What I do:</h2>
+                    <h2>What I do</h2>
                     <hr>
-                    <p>I was first introduced to development in 2011, since going on to work in industry I have begun to dig into what development patterns and best practice ... what works large scale, and long term is what interests me the most.</p>
-                    <p>I am currently reading final part C of my bsc degree
-                        <strong>Information Mangement & Computing &nbsp;</strong>at
-                        <strong>Loughborough University</strong>
+                    <p>I was first introduced to development in 2011, since going on to work in industry. Areas of most interest to me are those of testability, scalability and maintanability</p>
+                    <p>I am currently reading my final year of Information Mangement &amp; Computing at Loughborough University
                     </p>
                 </div>
             </div>
@@ -146,25 +150,40 @@
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-4 text-center">
                     <h2>Projects</h2>
+                    <p>More coming soon ...</p>
                     <hr>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <p class="text-center">Final year project</p>
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <img src="img/projects/final_year_project/int_dash.png" class="img-responsive" alt="">
-                    </a>
+                <div class="col-md-12">
+                    <h3 class="text-center">Websites / Web apps</h3>
+                    <br>
+                    <div class="row">
+                        <!-- REMOVE OFFSET WHEN ADDING MORE TILES -->
+                        <div class="col-sm-4 col-sm-offset-4 portfolio-item">
+                            <p class="text-center">Final year project</p>
+                            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                                <img src="img/projects/final_year_project/int_dash.png" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="col-sm-4 portfolio-item">
-                    <p class="text-center">Advanced HCI</p>
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <img src="img/projects/advanced_hci/kinect.jpg" class="img-responsive" alt="">
-                    </a>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center">Design</h3>
+                    <br>
+                    <!-- REMOVE OFFSET WHEN ADDING MORE TILES -->
+                    <div class="col-sm-4 col-sm-offset-4 portfolio-item">
+                        <p class="text-center">Advanced HCI</p>
+                        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                            <img src="img/projects/advanced_hci/kinect.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
                 </div>
+            </div>
 
-                <!--
+            <!--
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -206,7 +225,7 @@
                     </a>
                 </div>
             </div> -->
-            </div>
+        </div>
     </section>
 
     <!-- Skills & Competencies -->
@@ -220,7 +239,7 @@
             </div>
             <div class="row text-center">
                 <div class="col-lg-4 col-md-4">
-                    <h3>Languages</h3>
+                    <h3>Core</h3>
                     <br>
                     <br>
                     <ul>
@@ -276,7 +295,7 @@
                             <p>CoffeeScript.js</p>
                         </li>
                         <li>
-                            <p>Bootstrap</p>
+                            <p>Twitter Bootstrap</p>
                         </li>
                 </div>
                 <div class="col-lg-4 col-md-4">
@@ -375,106 +394,13 @@
     <section id="Education" class="success">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-4 text-center">
+                <div class="col-lg-12 text-center">
                     <h2>Education</h2>
-                    <br>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h4>LoughBorough University</h4>
+                    <h4>Loughborough University</h4>
                     <hr>
+                    <img src="img/education.jpg" class="img-responsive" alt="">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-1">
-                    <h4>Year 1: 70%</h4>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2">
-                    <h4>Year 2: 71.1%</h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-1">
-                    <br>
-                    <p>Computer Systems:</p>
-                    <p>Databases:</p>
-                    <p>Essential Skills For Computing:</p>
-                    <p>Management Problem Solving:</p>
-                    <p>Organizational Theory:</p>
-                    <p>Programming For The WWW:</p>
-                    <p>Info Retrieval And Organization:</p>
-                    <p>Server Side Programming:</p>
-                    <p>Studying Information Science:</p>
-                    <p>The Information society:</p>
-                    <p>Web Design & Authoring:</p>
-                </div>
-                <div class="col-lg-1">
-                    <br>
-                    <p>81%</p>
-                    <p>70%</p>
-                    <p>69%</p>
-                    <p>68%</p>
-                    <p>66%</p>
-                    <p>64%</p>
-                    <p>69%</p>
-                    <p>81%</p>
-                    <p>69%</p>
-                    <p>60%</p>
-                    <p>79%</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-1">
-                    <br>
-                    <p>People-centered info service design:</p>
-                    <p>HRM:</p>
-                    <p>Informatics & systems:</p>
-                    <p>Information retrieval:</p>
-                    <p>Research methods:</p>
-                    <p>Subject analysis & indexing:</p>
-                    <p>Team projects:</p>
-                    <p>Operating systems & networks:</p>
-                    <p>Computing legal and professional:</p>
-                    <p>Knowledge-based decision support</p>
-                    <p>Requirements engineering</p>
-                </div>
-                <div class="col-lg-1">
-                    <br>
-                    <p>66%</p>
-                    <p>68%</p>
-                    <p>65%</p>
-                    <p>83%</p>
-                    <p>71%</p>
-                    <p>66%</p>
-                    <p>69%</p>
-                    <p>79%</p>
-                    <p>70%</p>
-                    <p>79%</p>
-                    <p>68%</p>
-                </div>
-            </div>
-
-            <br>
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h4>other</h4>
-                    <hr>
-                    <h4>Computer Club For Girls</h4>
-                    <ul>
-                        <p>- Teaching scheme raising girls awareness of careers in Computing/Technology.</p>
-                        <p>- Ages 11-16yrs</p>
-                        <p>- Afterschool activities for ~15 children on topics such as: Magazine Publishing & Videography.</p>
-                    </ul>
-                    <br>
-
-                    <h4>October 2009 Young Enterprise Company Scheme</h4>
-                    <ul>
-                        <p>- Managing director of a successful young enterprise company</p>
-                    </ul>
-                    <br>
-
-                </div>
-            </div>
-        </div>
     </section>
 
 
@@ -487,7 +413,7 @@
                 </div>
             </div>
         </div>
-        <iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AheVsRzXDwmIdHJyMElvWWoyUUVWSmhxUDljY1ZXM1E&font=Bevan-PotanoSans&maptype=toner&lang=en&height=650' width='100%' height='650' frameborder='0'></iframe>
+        <iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AheVsRzXDwmIdHJyMElvWWoyUUVWSmhxUDljY1ZXM1E&font=Bevan-PotanoSans&maptype=toner&lang=en&height=650&start_at_end=true' width='100%' height='650' frameborder='0'></iframe>
         </div>
     </section>
 
@@ -563,8 +489,8 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <h3>Authored work</h3>
-                    <p>I write about work and personal realated topics, it's informal and anything that I think is worth sharing, below is just a sample</p>
-
+                    <p>I like to write about development related topics as I discover new technologies, patterns or if I think I have something worth sharing.</p>
+                    <hr>
                     <p>
                         <a href="https://medium.com/@loubichard/use-_-partialright-to-improve-callback-syntax-4479e236c22f">Use _.partialRight to improve callback syntax</a>
                     </p>
@@ -576,6 +502,12 @@
                     <p>
                         <a href="https://medium.com/@loubichard/what-university-didnt-teach-me-about-javascript-development-124a7887ae53">What university didn't teach me about JavaScript development</a>
                     </p>
+
+                    <h4>Series: Project pitfalls</h4>
+                    <p>
+                        <a href="https://medium.com/@loubichard/project-pitfalls-planning-execution-cffce2c6a2ce">Planning &amp; execution</a>
+                    </p>
+
                 </div>
             </div>
         </div>
@@ -617,7 +549,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; louisjohnbichard.com
+                        Copyright &copy; louisjohnbichard.co.uk
                     </div>
                 </div>
             </div>
@@ -637,58 +569,96 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Final year project</h2>
+                            <h1>Final year project</h1>
                             <hr>
                             <br>
-                            <h2>Background</h2>
-                            <br>
-                            <p>My final year project is for an unnamed government funded charity. The system is a that sits centrally between many other external services: Charities, law enforcement, councillors and acts as a management tool for these services</p>
-                            <p>As users are referred to third parties, these referalls can be managed and rated so that data is fed back to government for performance and success metrics.</p>
-
-                            <p>The system initially is a beta prototype used to scope out areas of technical difficulty, and to experiment with a number of different designs and concepts</p>
-
-                            <p>The system is to be piloted in one area of the UK, but will be scaled across the country if successfully, and is architected to reflect this requirement</p>
-
-                            <br>
-                            <h2>System Overview</h2>
-                            <br>
-
-                            <p>The system is a dashboard like application consisting of 2 distinct parts which will share architecture, design look and feel however each will expose differing functionality respectively dependent on the type of user: internal or external, and the users role</p>
-
+                            <p>This project is for government funded charity Survivors United.</p>
+                            <p>The project is still ongoing and I will update as it progresses.</p>
                             <br>
                             <h2>Technologies</h2>
+                            <br>
                             <ul>
                                 <li>
-                                    <p>Node</p>
+                                    <p>MEAN (Mongo, Expresss, Angular & Node)</p>
                                 </li>
                                 <li>
-                                    <p>MongoDB</p>
+                                    <p>Bootstrap</p>
                                 </li>
                                 <li>
-                                    <p>Express</p>
-                                </li>
-                                <li>
-                                    <p>Twitter Bootstrap</p>
-                                </li>
-                                <li>
-                                    <p>Jasmine unit testing</p>
-                                </li>
-                                <li>
-                                    <p>vows/api-easy REST endpoint testing</p>
-                                </li>
-                                <li>
-                                    <p>Angular front end framework</p>
+                                    <p>Jasmine/ Vows testing suite (API end point and Unit)</p>
                                 </li>
                             </ul>
+                            <br>
+                            <h2>Project Brief Report</h2>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <object data="assets/fypbrief.pdf" type="application/pdf" width="100%" height="600px">
+                <p>
+                    It appears you don't have a PDF plugin for this browser. You can <a href="myfile.pdf">click here to download the PDF file.</a>
+                </p>
+            </object>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+
 
                             <br>
                             <h2>Wireframes</h2>
                             <br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="img/projects/final_year_project/int_dash.png" class="img-responsive" alt="">
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="img/projects/final_year_project/ext_dash.png" class="img-responsive" alt="">
+                                </div>
+                            </div>
 
-                            <img src="img/projects/final_year_project/int_dash.png" class="img-responsive" alt="">
-                            <img src="img/projects/final_year_project/ext_dash.png" class="img-responsive" alt="">
+                            <br>
+                            <h2>UI Design concept</h2>
+                            <br>
+                            <img src="img/projects/final_year_project/mock.jpg" class="img-responsive" alt="">
 
+                            <br>
+                            <h2>Activity diagram</h2>
+                            <br>
+                            <img src="img/projects/final_year_project/su_activity.jpg" class="img-responsive" alt="">
 
+                            <h2>Unique features</h2>
+                            <br>
+                            <p>I really wanted this project to be a showcase of my developmental prowess and ability to create not only beautiful UI, great design but also to bring a concept that was industry standard and viable. I am a big believer in test driven development and believe it makes for a far superior product.</p>
+                            <h3>Unit testing</h3>
+                            <p>As the project is built on the Angular Framework testing was particularly easy to implement, I have a Jasmine test suite running through Karma at the moment.</p>
+                            <p>At the time of writing I have 1100 lines of application code and 1600 lines of unit testing for the front end.</p>
+                            <p>As testing is centric to my development process, i have an istanbul code coverage tool running on my front end to test my unit test coverage, I take a lot of pride in keeping this as green as feasibly possible (100% is best!)</p>
+                            <br>
+                            <img src="img/projects/final_year_project/istanbul.png" class="img-responsive" alt="">
+                            <br>
+                            <h3>REST endpoint testing</h3>
+                            <p>To ensure that my backend node server is running across all the API's that I require I have built a custom test runner from the vows and API-easy test suites.</p>
+                            <br>
+                            <img src="img/projects/final_year_project/rest_test.png" class="img-responsive" alt="">
+                            <br>
+                            <p>Above is an example of one of the back end tests. What makes this so cool is the custom create and destory DB commands. When setup_db is ran, the db is cleaned and you can specify in JSON/Object literal format the setup data to load into the database (or reference a JSON file) which makes testing endpoints based on different database states a breeze!</p>
+                            <br>
+                            <img src="img/projects/final_year_project/rest_output.png" class="img-responsive" alt="">
+                            <br>
+                            <p>Here is just a little of the command line output that shows which endpoint is being tested, and the number of tests. As you can see, I don't like to have any holes in my testing, so I have a TODO function in the code that causes a little output prompt reminder that there are unwritten tests, a nice little reminder!</p>
+                            <br>
+                            <h3>Thats all for now!</h3>
+                            <p>I will as afformentioned update this page as the project progresses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -717,7 +687,7 @@
                             <br>
 
                             <p>
-                                University group project to produce an online shopping experience for ASDA george and present our ideas in a presentaiton and a formal report (included).
+                                University group project to produce a new online shopping experience for ASDA george
                             </p>
 
                             <br>
@@ -787,7 +757,6 @@
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
         </div>
     </div>
-
 
 
     <!-- jQuery Version 1.11.0 -->
