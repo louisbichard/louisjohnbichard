@@ -34,7 +34,7 @@ ul {
 }
 .headerImageText {
     color: black;
-    display: table-cell; 
+    display: table-cell;
     vertical-align: middle;
 }
 /* Image reel CSS */
@@ -60,7 +60,7 @@ ul {
 }
 nav.navbar.navbar-default.navbar-fixed-top {
     background-color: white;
-    border-bottom: #000000;
+    box-shadow: 0 2px 2px;
     border-style: solid;
 }
 .navbar-default .navbar-nav>li>a {
@@ -72,7 +72,9 @@ nav.navbar.navbar-default.navbar-fixed-top {
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #000000;
 }
-
 .white {
     color: #ffffff;
+}
+.img-lead.img-circle {
+    box-shadow: 0 1px 10px;
 }
