@@ -5,8 +5,12 @@
 }
 /* Add pacifico for the title */
 
-.raleway, h2, h3, h4, a {
+.raleway {
     font-family: 'Raleway', serif;
+}
+body {
+    font-weight: 300;
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 /* Remove the bullets from list elements */
 
@@ -77,4 +81,12 @@ nav.navbar.navbar-default.navbar-fixed-top {
 }
 .img-lead.img-circle {
     box-shadow: 0 1px 10px;
+}
+p.grey {
+    font-size: 15px;
+    opacity: 0.5;
+    color: black;
+}
+.elevated {
+    box-shadow: 0 2px 12px;
 }
