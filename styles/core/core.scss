@@ -1,0 +1,72 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+// #CORE
+// ##COLORS
+// ###CORE COLOR PALLETTE
+$color-main: #2196F3;
+$color-main-light: #64B5F6;
+$color-accent: #F06292;
+// ###UTILITY COLORS
+$white: white;
+// ###UTILITY CLASSES
+.background-main {
+    background-color: $color-main;
+}
+.background-main-light {
+    background-color: $color-main-light;
+}
+.background-accent {
+    background-color: $color-accent;
+}
+// ##SHADOW 
+$shadow-high: 0 2px 2px rgba(0, 0, 0, 0.3);
+$shadow-mid: 0 1px 2px rgba(0, 0, 0, 0.16);
+$shadow-low: 0 1px 1px rgba(0, 0, 0, 0.05);
+$shadow-top-mid: -1px -2px rgba(0, 0, 0, 0.3);
+// ### REGULAR
+.shadow-low {
+    box-shadow: $shadow-low;
+}
+.shadow-mid {
+    box-shadow: $shadow-mid;
+}
+.shadow-high {
+    box-shadow: $shadow-high;
+}
+// ### SHADOW TO TOP
+.shadow-top-mid {
+    box-shadow: $shadow-top-mid;
+}
+// #TYPOGRAPHY
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 200;
+}
+p {
+    font-weight: 300;
+}
+// ##HELPER CLASSES
+.text-white {
+    color: $white;
+}
+// #COMPONENTS
+// ##NAVIGATION
+.navbar {
+    background-color: $color-main;
+    .navigation {
+        .nav-pill {
+            padding: 20px;
+        }
+        .nav-link {
+            padding: 5px;
+            font-weight: 100;
+            color: $color-accent;
+        }
+    }
+}
+// #COMPONENTS
+// ##FOOTER
+.footer {
+    box-shadow: $shadow-top-mid;
+    background-color: $color-main-light;
+}
