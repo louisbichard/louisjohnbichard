@@ -23,6 +23,15 @@ portfolio.config(function($routeProvider) {
         templateUrl: '../views/contact_me.html'
     })
 
+    // #PROJECTS
+    .when('/angular_blog', {
+        templateUrl: '../views/projects/angular_blog.html'
+    })
+
+    .when('/angular_percentagebar', {
+        templateUrl: '../views/projects/angular_percentagebar.html'
+    })
+
     // #DEFAULT REDIRECT
     .otherwise({
         redirectTo: '/'
