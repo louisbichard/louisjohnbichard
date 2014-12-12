@@ -38,195 +38,41 @@
 <br>
 
 <h1 class="text-center"> Portfolio </h1>
-
 <hr>
 
-<!-- TODO: DELETE ME -->
+<!-- #ALL PROJECTS -->
+<div ng-repeat="section in sections">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1">
+                    <h1> {{section.name}} </h1>
+                </div>
+                <div class="col-md-4 col-md-offset-4">
 
-<!-- #DESIGN PROJECTS -->
-<div class="row">
-    <div class="col-md-12">
-        <div class="row">
-            <div class="col-md-3 col-md-offset-1">
-                <h1> Development </h1>
-            </div>
-            <div class="col-md-4 col-md-offset-4">
-                <!-- ##PROJECTS -->
-
-                <!-- ### SURVIVORS UNITED -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="text-center"> Survivors United </h2>
+                    <!-- ##PROJECTS -->
+                    <div ng-repeat="project in section.projects">
                         <div class="row">
                             <div class="col-md-12">
-                                <img class="img-responsive" src="../img/projects/final_year_project/coffeehouse_laptop.jpg">
+                                <h2 class="text-center"> {{project.title}} </h2>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <a href="#{{project.url}}">
+                                            <img class="img-responsive" src="{{project.img}}">
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <p> Survivors United is a full Javascript application stack </p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="text-center"> Team projects </h2>
                         <div class="row">
-                            <div class="col-md-12">
-                                <img class="img-responsive" src="../img/projects/final_year_project/close_up.jpg">
+                            <div class="col-md-12 text-center">
+                                <p> {{project.description}} </p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <p> University module group task LAMP stack timetabling dashboard application </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-<hr>
-<!-- TODO: DELETE ME -->
-
-<!-- #DEVELOPMENT PROJECTS -->
-<div class="row">
-    <div class="col-md-12">
-        <div class="row">
-            <div class="col-md-3 col-md-offset-1">
-                <h1> Design </h1>
-            </div>
-            <div class="col-md-4 col-md-offset-4">
-                <!-- ##PROJECTS -->
-
-                <!-- ### SURVIVORS UNITED -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="text-center"> Survivors United Designs </h2>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <img class="img-responsive" src="../img/projects/final_year_project/close_up.jpg">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <p> Survivors United is a full Javascript application stack </p>
-                    </div>
-                </div>
-
-                <!-- ### SURVIVORS UNITED -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="text-center"> Facebook redesign </h2>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <img class="img-responsive" src="http://i2.mirror.co.uk/incoming/article676858.ece/alternates/s2197/Topic%20-%20Facebook">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <p> A live preview of a redesigned facebook design </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<hr>
-<!-- TODO: DELETE ME -->
-
-<!-- #PLUGINS -->
-<div class="row">
-    <div class="col-md-12">
-        <div class="row">
-            <div class="col-md-3 col-md-offset-1">
-                <h1> Plugins </h1>
-            </div>
-            <div class="col-md-4 col-md-offset-4">
-                <!-- ##PROJECTS -->
-
-                <!-- ### ANGULAR-PROGRESS BAR -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="text-center"> Angular Progress Bar </h2>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="#angular_percentagebar">
-                                    <img class="img-responsive" src="../img/projects/angular-percentagebar/percentagebar1.png">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <p> Angular-progress bar is a directive based plugin for simple and elegant progress bars with a material design twist </p>
-                    </div>
-                </div>
-
-
-                <!-- ### ANGULAR-BLOG -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="text-center"> Angular blog </h2>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="#angular_blog">
-                                    <img class="img-responsive" src="../img/projects/angular-blog/angular-blog.png">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <p> Angular blog is a simple blog directive for parsing and creating markdown based blogs </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<hr>
-
-<!-- #AUTHORED WORK -->
-<div class="row">
-    <div class="col-md-12">
-        <div class="row">
-            <div class="col-md-3 col-md-offset-1">
-                <h1> Authored </h1>
-            </div>
-            <div class="col-md-4 col-md-offset-4">
-                <!-- ##PROJECTS -->
-
-                <!-- ### BROGRAMMER -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="text-center"> The Brogrammer </h2>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <img class="img-responsive" src="../img/projects/brogrammer/brogrammericon.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <p> An online series of blog posts that exemplify successful traits in projects and in life, exemplified through the use of weightlifting and programming </p>
-                        <p> To be compiled into an ebook </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <hr>
 </div>

@@ -1,8 +1,14 @@
 portfolio.config(function($routeProvider) {
     $routeProvider
 
-
         .when('/', {
+        controller: 'portfolioController',
+        templateUrl: '../views/portfolio.html'
+    })
+
+
+    .when('/portfolio', {
+        controller: 'portfolioController',
         templateUrl: '../views/portfolio.html'
     })
 
@@ -28,12 +34,28 @@ portfolio.config(function($routeProvider) {
         templateUrl: '../views/projects/angular_blog.html'
     })
 
+    .when('/brogrammer', {
+        templateUrl: '../views/projects/brogrammer.html'
+    })
+
+    .when('/survivors_united', {
+        templateUrl: '../views/projects/survivors_united.html'
+    })
+
+    .when('/survivors_united_designs', {
+        templateUrl: '../views/projects/survivors_united_designs.html'
+    })
+
     .when('/angular_percentagebar', {
         templateUrl: '../views/projects/angular_percentagebar.html'
     })
 
+    .when('/not_found', {
+        templateUrl: '../views/not_found.html'
+    })
+
     // #DEFAULT REDIRECT
     .otherwise({
-        redirectTo: '/'
+        redirectTo: '/not_found'
     });
 });
