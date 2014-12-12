@@ -7,7 +7,8 @@ portfolio.config(function($routeProvider) {
     })
 
     .when('/blog', {
-        templateUrl: '../views/blog.html'
+        templateUrl: '../views/blog.html',
+        controller: 'blogController'
     })
 
     .when('/styleguide', {

@@ -60,7 +60,9 @@ p {
         .nav-link {
             padding: 5px;
             font-weight: 100;
-            color: $color-accent;
+            font-size: 18;
+            color: $white;
+            text-transform: uppercase;
         }
     }
 }
@@ -69,4 +71,22 @@ p {
 .footer {
     box-shadow: $shadow-top-mid;
     background-color: $color-main-light;
+}
+// ###HTML CORE ELEMENTS
+.blog-search {
+    width: 100%;
+}
+.blog-hr {
+    width: 100%;
+    border: none;
+    color: #333;
+    background-color: #333;
+    height: 3px;
+}
+input {
+    padding: 5px;
+    border-top: 0px;
+    border-color: $color-accent;
+    border-right: 0px;
+    border-left: 0px;
 }
