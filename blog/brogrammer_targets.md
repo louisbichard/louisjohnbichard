@@ -1,6 +1,4 @@
 #The Brogrammer: Targets
-
-##Targets and parkinsons law
 14-October-2014
 
 ###What is parkinsons law?

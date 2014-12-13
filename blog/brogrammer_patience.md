@@ -11,9 +11,10 @@ Let me begin by addressing that what I am not talking about is fleeting impatien
 
 Let me digress for a moment.
 
-Weightlifting is a patient sport making the weightlifter a patient (or stubborn) person.
+"Weightlifting is a patient sport making the weightlifter a patient (or stubborn) person."
 
 For more Donny Shankle: http://donnyshankle.blogspot.co.uk/
+
 Attempting PB’s everyday
 “A good athlete (and a good developer!) must auto regulate his own energy.”
 Everyday isn’t about writing more code than you did yesterday, or lifting more weight. Let me explain.
@@ -42,14 +43,14 @@ Sometimes acute impatience is necessary. A weightlifter cannot afford to be pati
 
 ##House built on poor foundations
 
-http://www.jimsalmon.com/pix/falling-house.jpg
 You have a house made of suboptimal bricks, they rot and decay frequently and you’re constantly having to buy new bricks to replace them. You decide you want to build an extension and get some workmen in. But unfortunately when they leave you’re left juggling a house made out of poor bricks with no time to in your extension with your feet up reading the paper, you’re too busy running around tending to the bricks.
 
 Finish what you’ve started before you move on. How can you build new features on poor architecture? Take the time not just to plan out your architecture, but to maintain it, wonder fixing bugs before writing code is a part of the Joel test.
 
+“No amount of coaching cue’s will work if you simply do not have the strength” — Dmitry Klokov
 
 Watch the full and awesome interview with Klokov here https://www.youtube.com/watch?v=W92SdAZptHY
-“No amount of coaching cue’s will work if you simply do not have the strength” — Dmitry Klokov
+
 I love this quote from Klokov, no matter your knowledge in patching a problem, if your core, your foundation is not strong enough, you will never achieve true greatness.
 
 I hope this serves as a reminder to find the time to systematically take a step back and make sure you’re finishing what you start. A lack of investment in yourself (or your company, product or project) isn’t sustainable. It hurts the ego, but you must tame the need to satisfy the ego and use the patience you have if you truly wish to succeed.

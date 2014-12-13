@@ -45,6 +45,9 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-weight: 300;
 }
+p.note {
+    opacity: 0.54;
+}
 // ##HELPER CLASSES
 .text-white {
     color: $white;
@@ -54,23 +57,42 @@ p {
 .navbar {
     background-color: $color-main;
     .navigation {
+        color: $white;
+        .nav-selected {
+            color: $color-accent;
+        }
         .nav-pill {
             padding: 20px;
         }
         .nav-link {
             padding: 5px;
             font-weight: 100;
-            font-size: 18;
-            color: $white;
+            font-size: 18;            
             text-transform: uppercase;
+        }
+        .nav-link:hover {
+            color: $color-accent;
+            text-decoration: none;
+        }
+        .nav-link:visited {
+            text-decoration: none;
         }
     }
 }
 // #COMPONENTS
 // ##FOOTER
+#wrapper {
+    padding-bottom: 140px;
+    min-height: 100%;
+    position: relative;
+}
 .footer {
     box-shadow: $shadow-top-mid;
     background-color: $color-main-light;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 // ###HTML CORE ELEMENTS
 .blog-search {

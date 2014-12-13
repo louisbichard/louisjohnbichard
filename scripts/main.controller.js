@@ -1,3 +1,8 @@
-portfolio.controller('mainController', function($scope) {
-    $scope.test = "I am the main controller";
+portfolio.controller('mainController', function($scope, $location) {
+   
+    // USED FOR THE ACTIVE TABS ON THE DASHBOARD
+    $scope.$on('$locationChangeSuccess', function() {
+        $scope.location = $location.path()
+            .split('/')[1];
+    });
 });

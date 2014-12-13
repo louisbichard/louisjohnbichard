@@ -28,23 +28,43 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-weight: 300; }
 
+p.note {
+  opacity: 0.54; }
+
 .text-white {
   color: white; }
 
 .navbar {
   background-color: #2196F3; }
-  .navbar .navigation .nav-pill {
-    padding: 20px; }
-  .navbar .navigation .nav-link {
-    padding: 5px;
-    font-weight: 100;
-    font-size: 18;
-    color: white;
-    text-transform: uppercase; }
+  .navbar .navigation {
+    color: white; }
+    .navbar .navigation .nav-selected {
+      color: #F06292; }
+    .navbar .navigation .nav-pill {
+      padding: 20px; }
+    .navbar .navigation .nav-link {
+      padding: 5px;
+      font-weight: 100;
+      font-size: 18;
+      text-transform: uppercase; }
+    .navbar .navigation .nav-link:hover {
+      color: #F06292;
+      text-decoration: none; }
+    .navbar .navigation .nav-link:visited {
+      text-decoration: none; }
+
+#wrapper {
+  padding-bottom: 140px;
+  min-height: 100%;
+  position: relative; }
 
 .footer {
   box-shadow: -1px -2px rgba(0, 0, 0, 0.3);
-  background-color: #64B5F6; }
+  background-color: #64B5F6;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
 
 .blog-search {
   width: 100%; }

@@ -3,7 +3,7 @@
 <head>
     <!-- #SITE SETUP -->
     <title>Louis John Bichard</title>
-    <link rel="shortcut icon" href="./LJB.ico" />
+    <link rel="shortcut icon" href="./ico1.ico" />
 
     <!-- #LIBRARY STYLES -->
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -20,80 +20,82 @@
 
 
 
-<body ng-controller="mainController">
+<body ng-controller="mainController">    
 
-
-    <nav class="navbar navbar-default navbar-fixed-top animated slideinDown shadow-mid" role="navigation">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="text-center text-white"> Louis John Bichard </h3>
-            </div>
-        </div>
-        <div class="row text-center navigation">
-            <div class="col-md-2 col-md-offset-2 animated slideInLeft nav-pill">
-                <a class="nav-link" href="#portfolio">Portfolio</a>
-            </div>
-            <div class="col-md-2 animated slideInLeft nav-pill">
-                <a class="nav-link" href="#about">About</a>
-            </div>
-            <div class="col-md-2  animated slideInRight nav-pill">
-                <a class="nav-link" href="#blog">blog</a>
-            </div>
-            <div class="col-md-2  animated slideInRight nav-pill">
-                <a class="nav-link" href="#contact_me">Contact me</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- TODO: REMOVE THESE AND REPLACE WITH MARGIN -->
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-    <!-- #CONTENT -->
-    <div class="container">
-        <div ng-view class="animated fadeIn">
-        </div>
-    </div>
-
-    <!-- TODO: REMOVE THESE AND REPLACE WITH MARGIN -->
-    <br>
-    <br>
-
-    <!-- #FOOTER -->
-    <div class="row footer animated slideInUp shadow-top-mid">
-        <div class="col-md-12 text-center text-white">
-            <br>
-            <h4> &copy;&nbsp;Louis John Bichard </h4>
-            <p> Built on AngularJS and SASS </p>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top animated slideinDown shadow-mid" role="navigation">
             <div class="row">
-                <div class="col-md-2 col-md-offset-1">
-                    <p> Github </p>
-                    <i class="fa fa-2x fa-github"></i>
-                </div>
-                <div class="col-md-2">
-                    <p> Linkedin </p>
-                    <i class="fa fa-2x fa-linkedin"></i>
-                </div>
-                <div class="col-md-2">
-                    <p> Dribble </p>
-                    <i class="fa fa-2x fa-dribbble"></i>
-                </div>
-                <div class="col-md-2">
-                    <p> Stack Overflow </p>
-                    <i class="fa fa-2x fa-stack-overflow"></i>
-                </div>
-                <div class="col-md-2">
-                    <p> Stack Overflow </p>
-                    <i class="fa fa-2x fa-twitter"></i>
+                <div class="col-md-12">
+                    <h3 class="text-center text-white"> Louis John Bichard </h3>
                 </div>
             </div>
-            <br>
+            <div class="row text-center navigation">
+                <div class="col-md-2 col-md-offset-1 animated slideInLeft nav-pill">
+                    <a ng-class="{'nav-selected': location === 'home'}" class="nav-link text-white" href="#home">Home</a>
+                </div>
+                <div class="col-md-2 animated slideInLeft nav-pill">
+                    <a  ng-class="{'nav-selected': location === 'about'}"  class="nav-link text-white" href="#about">About</a>
+                </div>
+                <div class="col-md-2 animated slideInUp nav-pill">
+                    <a   ng-class="{'nav-selected': location === 'portfolio'}" class="nav-link text-white" href="#portfolio">Portfolio</a>
+                </div>
+                <div class="col-md-2  animated slideInRight nav-pill">
+                    <a  ng-class="{'nav-selected': location === 'blog'}" class="nav-link text-white" href="#blog">blog</a>
+                </div>
+                <div class="col-md-2  animated slideInRight nav-pill">
+                    <a  ng-class="{'nav-selected': location === 'contact_me'}"  class="nav-link text-white" href="#contact_me">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- TODO: REMOVE THESE AND REPLACE WITH MARGIN -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <!-- #CONTENT -->
+        <div class="container">
+            <div ng-view class="animated fadeIn">
+            </div>
+        </div>
+
+        <!-- TODO: REMOVE THESE AND REPLACE WITH MARGIN -->
+        <br>
+        <br>
+
+        <!-- #FOOTER -->
+        <div class="row footer animated slideInUp shadow-top-mid">
+            <div class="col-md-12 text-center text-white">
+                <br>
+                <p> &copy;&nbsp;Louis John Bichard </p>
+                <p class="note"> Built on AngularJS and SASS </p>
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-2">
+                        <p> Github </p>
+                        <a href="//github.com/louisbichard"><i class="fa fa-2x fa-github"></i></a>
+                    </div>
+                    <div class="col-md-2">
+                        <p> Linkedin </p>
+                        <a href="//uk.linkedin.com/in/louisbichard/"><i class="fa fa-2x fa-linkedin"></i></a>
+                    </div>
+                    <div class="col-md-2">
+                        <p> Stack Overflow </p>
+                        <a href="//stackoverflow.com/users/3876777/lou-bichard"><i class="fa fa-2x fa-stack-overflow"></i></a>
+                    </div>
+                    <div class="col-md-2">
+                        <p> Twitter </p>
+                        <a href="//twitter.com/loujaybee" <i class="fa fa-2x fa-twitter">
+                            </i>
+                        </a>
+                    </div>
+                </div>
+                <br>
+            </div>
         </div>
     </div>
 

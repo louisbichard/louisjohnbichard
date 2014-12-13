@@ -2,8 +2,11 @@ portfolio.config(function($routeProvider) {
     $routeProvider
 
         .when('/', {
-        controller: 'portfolioController',
-        templateUrl: '../views/portfolio.html'
+        templateUrl: '../views/home.html'
+    })
+
+    .when('/home', {
+        templateUrl: '../views/home.html'
     })
 
 
