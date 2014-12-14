@@ -1,15 +1,21 @@
-body {
-    font-family: 'Roboto', sans-serif;
-}
-// #CORE
-// ##COLORS
-// ###CORE COLOR PALLETTE
+
+// #GLOBALS
+// ##CORE COLOURS
 $color-main: #2196F3;
 $color-main-light: #64B5F6;
 $color-accent: #F06292;
-// ###UTILITY COLORS
+// ##UTILITY COLOURS
 $white: white;
-// ###UTILITY CLASSES
+// ##SHADOWS
+$shadow-high: 0 2px 2px rgba(0, 0, 0, 0.3);
+$shadow-mid: 0 1px 2px rgba(0, 0, 0, 0.16);
+$shadow-low: 0 1px 1px rgba(0, 0, 0, 0.05);
+$shadow-top-mid: -1px -2px rgba(0, 0, 0, 0.3);
+// #IMPORTS
+
+@import 'components.scss';
+@import 'typography.scss';
+
 .background-main {
     background-color: $color-main;
 }
@@ -19,11 +25,7 @@ $white: white;
 .background-accent {
     background-color: $color-accent;
 }
-// ##SHADOW 
-$shadow-high: 0 2px 2px rgba(0, 0, 0, 0.3);
-$shadow-mid: 0 1px 2px rgba(0, 0, 0, 0.16);
-$shadow-low: 0 1px 1px rgba(0, 0, 0, 0.05);
-$shadow-top-mid: -1px -2px rgba(0, 0, 0, 0.3);
+
 // ### REGULAR
 .shadow-low {
     box-shadow: $shadow-low;
@@ -37,78 +39,4 @@ $shadow-top-mid: -1px -2px rgba(0, 0, 0, 0.3);
 // ### SHADOW TO TOP
 .shadow-top-mid {
     box-shadow: $shadow-top-mid;
-}
-// #TYPOGRAPHY
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 200;
-}
-p {
-    font-weight: 300;
-}
-p.note {
-    opacity: 0.54;
-}
-// ##HELPER CLASSES
-.text-white {
-    color: $white;
-}
-// #COMPONENTS
-// ##NAVIGATION
-.navbar {
-    background-color: $color-main;
-    .navigation {
-        color: $white;
-        .nav-selected {
-            color: $color-accent;
-        }
-        .nav-pill {
-            padding: 20px;
-        }
-        .nav-link {
-            padding: 5px;
-            font-weight: 100;
-            font-size: 18;            
-            text-transform: uppercase;
-        }
-        .nav-link:hover {
-            color: $color-accent;
-            text-decoration: none;
-        }
-        .nav-link:visited {
-            text-decoration: none;
-        }
-    }
-}
-// #COMPONENTS
-// ##FOOTER
-#wrapper {
-    padding-bottom: 140px;
-    min-height: 100%;
-    position: relative;
-}
-.footer {
-    box-shadow: $shadow-top-mid;
-    background-color: $color-main-light;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-// ###HTML CORE ELEMENTS
-.blog-search {
-    width: 100%;
-}
-.blog-hr {
-    width: 100%;
-    border: none;
-    color: #333;
-    background-color: #333;
-    height: 3px;
-}
-input {
-    padding: 5px;
-    border-top: 0px;
-    border-color: $color-accent;
-    border-right: 0px;
-    border-left: 0px;
 }
