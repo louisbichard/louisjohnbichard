@@ -21,11 +21,15 @@ portfolio.controller('blogController', function($scope, $location) {
             date: '14th December 2014',
             path: "blog/brogrammer_patience.md",
             title: "The Brogrammer: Patience",
-            tags: ['Brogrammer']
+            tags: ['Brogrammer, Patience']
         }
     ];
 
-    debugger;
+    $scope.url = window.location.hostname + '/#blog?id=';
+
+    // IF ID IN URL, GO STRAIGHT TO IT
+    $scope.id = $location.$$search.id;
+    if ($location.$$search.id) $scope.searchText = $scope.id;
 
     $scope.addTagToSearch = function(tag) {
         $scope.searchText = tag.name;
