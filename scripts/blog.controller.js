@@ -1,19 +1,22 @@
-portfolio.controller('blogController', function($scope) {
+portfolio.controller('blogController', function($scope, $location) {
     $scope.posts = [
         //"blog/brogrammer_targets.md",
         {
+            id: "BL123",
             author: 'Louis John Bichard',
             date: '14th December 2014',
             path: "blog/brogrammer_nutrient_timing.md",
             title: 'The Brogrammer: Nutrient timing',
             tags: ['Javascript', 'Brogrammer', 'Nutrients']
         }, {
+            id: "BL124",
             author: 'Louis John Bichard',
             path: "blog/javascriptunittestexplained.md",
             date: '14th December 2014',
             title: 'Javascript Unit Tests Spies Explained',
             tags: ['Brogrammer', 'Javascript', 'Unit testing', 'testing', 'Development', 'Programming', 'Efficiency']
         }, {
+            id: "BL125",
             author: 'Louis John Bichard',
             date: '14th December 2014',
             path: "blog/brogrammer_patience.md",
@@ -22,8 +25,10 @@ portfolio.controller('blogController', function($scope) {
         }
     ];
 
-    $scope.setTagSearch = function(tag) {
-        $scope.searchByTag = tag;
+    debugger;
+
+    $scope.addTagToSearch = function(tag) {
+        $scope.searchText = tag.name;
     };
 
     $scope.tags =
