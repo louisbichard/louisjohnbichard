@@ -51,15 +51,17 @@
   left: 0;
   width: 100%; }
 
-.blog-search {
+.angular-blog .blog-search {
   width: 100%; }
-
-.blog-hr {
+.angular-blog .blog-hr {
   width: 100%;
   border: none;
   color: #333;
   background-color: #333;
   height: 3px; }
+.angular-blog .blog-metadata, .angular-blog .blog-tags {
+  color: #F06292;
+  opacity: 54; }
 
 input {
   padding: 5px;

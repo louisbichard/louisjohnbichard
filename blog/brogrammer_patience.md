@@ -1,5 +1,3 @@
-#The brogrammer: Patience 
-
 It’s a pattern that I have seen throughout my entire life. A pattern that prevents the greats from really being great; patience.
 
 Patience is a trait that the typically desk bound developer can learn from the weightlifter, yet it is not to 'have patience' that is important, it’s to know when to harness the patience you have and when to set it aside.

@@ -1,4 +1,3 @@
-#The Brogrammer: Nutrient Timing
 ##What is nutrient timing and why should I care?
 
 Nutrient timing is the usage of your eating habits as a tool to leverage and harness your own physical but mental potential. Your physique and strength is but a manifestation of your mental state, and by using nutrient timing to access your mental talents, you can affect not only your physical state but also assist in your career.

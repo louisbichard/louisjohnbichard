@@ -1,5 +1,3 @@
-#Javascript unit test spies explained
-
 Below is a quick introduction and explanation of what test spies are using an example from the Jasmine test library and how you can use them in your own code.
 
 ##What is a spy?
