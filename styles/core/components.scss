@@ -7,13 +7,20 @@
         .nav-selected {
             color: $color-accent;
         }
-        .nav-pill {
-            padding: 20px;
+        @media only screen and (min-width: $window-md) {
+            .nav-pill {
+                padding: 15px;
+            }
+        }
+        @media only screen and (max-width: $window-md) {
+            .nav-pill {
+                padding: 10px;
+            }
         }
         .nav-link {
             padding: 5px;
             font-weight: 100;
-            font-size: 18;            
+            font-size: 18;
             text-transform: uppercase;
         }
         .nav-link:hover {
@@ -25,11 +32,41 @@
         }
     }
 }
-// #COMPONENTS
+// #CONTENT
+// ## LARGE SCREEN
+@media only screen and (min-width: $window-md) {
+    div.content {
+        margin: {
+            top: 135px;
+        }
+    }
+}
+// ## MEDIUM SCREEN
+@media only screen and (min-width: $window-sm) and (max-width: $window-md) {
+    div.content {
+        margin-top: 50px;
+    }
+}
+// ##SMALL SCREEN
+@media only screen and (min-width: $window-sm) and (max-width: $window-md) {
+    div.content {
+        margin: {
+            top: 135px;
+        }
+    }
+}
+// ##SMALL SCREEN
+@media only screen and (min-width: $window-xs) and (max-width: $window-sm) {
+    div.content {
+        margin: {
+            top: 135px;
+        }
+    }
+}
 // ##FOOTER
 #wrapper {
     padding-bottom: 140px;
-    min-height: 100%;
+    min-height: 86%;
     position: relative;
 }
 .footer {

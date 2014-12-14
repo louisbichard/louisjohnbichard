@@ -1,4 +1,3 @@
-
 // #GLOBALS
 // ##CORE COLOURS
 $color-main: #2196F3;
@@ -11,11 +10,15 @@ $shadow-high: 0 2px 2px rgba(0, 0, 0, 0.3);
 $shadow-mid: 0 1px 2px rgba(0, 0, 0, 0.16);
 $shadow-low: 0 1px 1px rgba(0, 0, 0, 0.05);
 $shadow-top-mid: -1px -2px rgba(0, 0, 0, 0.3);
-// #IMPORTS
-
+// #VIEWPORT SIZES
+$window-xs: 0px;
+$window-sm: 768px;
+$window-md: 992px;
+$window-lg: 1200px;
+// #IMPORTS 
 @import 'components.scss';
 @import 'typography.scss';
-
+// ## STYLE GUIDE
 .background-main {
     background-color: $color-main;
 }
@@ -25,8 +28,7 @@ $shadow-top-mid: -1px -2px rgba(0, 0, 0, 0.3);
 .background-accent {
     background-color: $color-accent;
 }
-
-// ### REGULAR
+// ### STYLE GUIDE SHADOWS
 .shadow-low {
     box-shadow: $shadow-low;
 }
