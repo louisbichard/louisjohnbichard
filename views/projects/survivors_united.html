@@ -1,30 +1,117 @@
 <h1>Survivors United</h1>
 
-<p class="lead"> MEAN stack dashboard application for government funded charity Survivors United. </p>
+<p class="lead"> MEAN stack dashboard application for government funded charity Survivors United created with TDD methodology </p>
 
 <hr>
 
 <div class="row">
-    <div class="col-md-8">
-        <h2> Features </h2>
+    <div class="col-md-12">
+        <h2> Technologies </h2>
         <ul>
             <li>MongoDB</li>
             <li>Angular</li>
             <li>Express</li>
             <li>Node</li>
             <li>D3 Charts</li>
-            <li>Fully unit tested front end </li>
-            <li>Fully tested REST endpoints</li>
-            <li>Developer test suite with error statistics and test running at the click of a button</li>
-            <li>Cylomatic Complexity application wide is &lt; 5</li>
+            <li>Google maps API</li>
         </ul>
-        
+        <h2> Features </h2>
+        <ul>
+            <li>CRM like task management</li>
+            <li>User authentication and profiling</li>
+            <li>User management suite</li>
+            <li>Notifications suite</li>
+            <li>Developer suite</li>
+            <li>Events creation, viewing, attending and watching</li>
+        </ul>
     </div>
-    <div class="col-md-4">
-    	<img class="img-responsive"  src="../../img/projects/final_year_project/istanbul.png" alt="">
-    	<br>
-        <img class="img-responsive" src="../../img/projects/final_year_project/rest_output.png" alt="">        
+</div>
+
+<hr>
+
+<div class="row">
+    <div class="col-md-12">
+        <h2> Testing </h2>
+        <p> I have a number of tests suites including a UI interface for use by system admins for ensuring quality in the product and monitoring of site status from unit tests, coverage and cyclomatic complexity testing </p>
+        <div class="row">
+            <div class="col-md-8">
+                <h4> API error reports </h4>
+                <ul>
+                    <li>Logging of all API's for UI output</li>
+                    <li> UI interface with tables and charts of crunched data </li>
+                    <li> Easy acknowledgement of error prone API's or files and their corresponding errors </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <br>
+                <br>
+                <br>
+                <img class="img-responsive" src="../../img/projects/final_year_project/error_table.png" alt="">
+                <br>
+                <img class="img-responsive" src="../../img/projects/final_year_project/error_graph.png" alt="">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-8">
+                <h4> Code coverage </h4>
+                <ul>
+                    <li>Istanbul reports are produced that outline which lines have been tested</li>
+                    <li>Usually kept at 100%</li>
+                    <li>Ensures no slipping in unit testing</li>
+                    <li>Clear acknowledgement of coverage</li>
+                    <li>Confidence in completing and commiting features</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <br>
+                <br>
+                <br>
+                <img class="img-responsive" src="../../img/projects/final_year_project/istanbul.png" alt="">
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-md-8">
+                <h4> REST Endpoint testing </h4>
+                <ul>
+                    <li>All of the API's are covered by tests</li>
+                    <li> Tests run all functions of the API's manually </li>
+                    <li> Custom testing framework built ontop of open source library API-Easy </li>
+                    <li> Database breakdown functions are ran for ensuring database state in each test </li>
+                    <li> Setup of the database can be performed before each test, for ensuring database state </li>
+                    <li> Expecting of error status' i.e 200's, 404's etc </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <br>
+                <br>
+                <br>
+                <img class="img-responsive" src="../../img/projects/final_year_project/rest_output.png" alt="">
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-md-8">
+                <h4> Cyclomatic complexity monitoring </h4>
+                <ul>
+                    <li>Cyclomatic complexity is measured accross the code base to ensure that it remains below 5</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
     </div>
+
+
+
+    <!-- <div class="col-md-4">
+    
+    <br>
+    
+</div> -->
 </div>
 
 <hr>
@@ -35,7 +122,7 @@
 
 <h2> Briefing specification </h2>
 
-<object data="../../assets/fypbrief.pdf" type="application/pdf" width="100%" height="600px">
+<object class="projectpdf" data="../../assets/fypbrief.pdf" type="application/pdf">
     <p>
         It appears you don't have a PDF plugin for this browser. You can <a href="myfile.pdf">click here to download the PDF file.</a>
     </p>

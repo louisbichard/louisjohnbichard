@@ -47,7 +47,7 @@
         margin-top: 50px;
     }
 }
-// ##SMALL SCREEN
+// ## SMALL SCREEN
 @media only screen and (min-width: $window-sm) and (max-width: $window-md) {
     div.content {
         margin: {
@@ -55,7 +55,7 @@
         }
     }
 }
-// ##SMALL SCREEN
+// ## X-SMALL SCREEN
 @media only screen and (min-width: $window-xs) and (max-width: $window-sm) {
     div.content {
         margin: {
@@ -94,4 +94,17 @@ input {
     border-color: $color-accent;
     border-right: 0px;
     border-left: 0px;
+}
+//#PDF
+@media only screen and (min-width: $window-xs) and (max-width: $window-sm) {
+    object.projectpdf {
+        width: 100%;
+        height: 600px;
+    }
+}
+@media only screen and (min-width: $window-md) and (max-width: $window-lg) {
+    object.projectpdf {
+        width: 100%;
+        height: 600px;
+    }
 }
