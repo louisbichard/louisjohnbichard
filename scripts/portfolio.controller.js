@@ -1,5 +1,6 @@
 portfolio.controller('portfolioController', function($scope) {
-    $scope.test = "I am the main controller";
+
+    // PORTFOLIO PROJECTS
     $scope.sections = [{
         name: 'Development',
         projects: [{
@@ -7,12 +8,7 @@ portfolio.controller('portfolioController', function($scope) {
             description: "Survivors United is a full Javascript MEAN dashboard application stack",
             img: "../img/projects/final_year_project/coffeehouse_laptop.jpg",
             url: "survivors_united"
-        }/* ,{
-            title: "Team Projects",
-            description: "University module group task LAMP stack timetabling dashboard",
-            img: "../img/projects/final_year_project/close_up.jpg",
-            url: "#"
-        }*/]
+        }],
     }, {
         name: 'Design',
         projects: [{
@@ -43,4 +39,47 @@ portfolio.controller('portfolioController', function($scope) {
             url: "brogrammer"
         }]
     }];
+    // COMPETENCIES
+    $scope.config = {
+        tooltips: false,
+        yAxisTickFormat: 's', //refer tickFormats in d3 to edit this value
+        colors: ['#F06292'],
+        labels: false,
+        mouseover: function() {},
+        mouseout: function() {},
+        click: function() {},
+        legend: {
+            display: false,
+            //could be 'left, right'
+            position: 'right'
+        }
+    };
+
+    $scope.data = {
+        core: {
+            series: [],
+            data: [{
+                x: "JavaScript",
+                y: [5],
+                tooltip: "this is tooltip"
+            }, {
+                x: "HTML",
+                y: [5]
+            }, {
+                x: "CSS",
+                y: [5]
+            }, {
+                x: "Responsive web design",
+                y: [5]
+            }]
+        }
+    };
+
 });
+
+/* ,{
+            title: "Team Projects",
+            description: "University module group task LAMP stack timetabling dashboard",
+            img: "../img/projects/final_year_project/close_up.jpg",
+            url: "#"
+        }*/
