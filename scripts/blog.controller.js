@@ -4,7 +4,7 @@ portfolio.controller('blogController', function($scope, $location) {
         {
             id: "BL123",
             author: 'Louis John Bichard',
-            date: '14th December 2014',
+            date: '22th November 2014',
             path: "blog/brogrammer_nutrient_timing.md",
             title: 'The Brogrammer: Nutrient timing',
             tags: ['Javascript', 'Brogrammer', 'Nutrients']
@@ -12,16 +12,16 @@ portfolio.controller('blogController', function($scope, $location) {
             id: "BL124",
             author: 'Louis John Bichard',
             path: "blog/javascriptunittestexplained.md",
-            date: '14th December 2014',
+            date: '4th December 2014',
             title: 'Javascript Unit Tests Spies Explained',
-            tags: ['Brogrammer', 'Javascript', 'Unit testing', 'testing', 'Development', 'Programming', 'Efficiency']
+            tags: ['Javascript', 'Unit testing', 'Testing', 'Development', 'Programming', 'Efficiency']
         }, {
             id: "BL125",
             author: 'Louis John Bichard',
-            date: '14th December 2014',
+            date: '14th November 2014',
             path: "blog/brogrammer_patience.md",
             title: "The Brogrammer: Patience",
-            tags: ['Brogrammer, Patience']
+            tags: ['Brogrammer', 'Patience']
         }
     ];
 
