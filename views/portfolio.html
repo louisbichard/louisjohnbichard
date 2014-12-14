@@ -1,6 +1,4 @@
-<h1 class="text-center"> Portfolio </h1>
 
-<hr>
 
 <!-- #ALL PROJECTS -->
 <div ng-repeat="section in sections">
@@ -41,9 +39,23 @@
 
 <h1 class="text-center"> Competencies </h1>
 
-<h3> Core skills </h3> 
 
-<div data-ac-chart="'bar'" data-ac-data="data.core" data-ac-config="config" class="chart angularChart"></div>
 
-<h3> Preprocessors and librarys </h3> 
-<div data-ac-chart="'bar'" data-ac-data="data.core" data-ac-config="config" class="chart angularChart"></div>
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6">
+        <h3 class="text-center"> Core </h3>
+        <div data-ac-chart="'bar'" data-ac-data="data.core" data-ac-config="config" class="chart angularChart"></div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6">
+        <h3 class="text-center">  Databases </h3>
+        <div data-ac-chart="'bar'" data-ac-data="data.secondary" data-ac-config="config" class="chart angularChart"></div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6">
+        <h3 class="text-center">  Concepts </h3>
+        <div data-ac-chart="'bar'" data-ac-data="data.concepts" data-ac-config="config" class="chart angularChart"></div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6">
+        <h3 class="text-center">  Libraries </h3>
+        <div data-ac-chart="'bar'" data-ac-data="data.libraries" data-ac-config="config" class="chart angularChart"></div>
+    </div>
+</div>

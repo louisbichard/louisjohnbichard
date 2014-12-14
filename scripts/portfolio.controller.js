@@ -61,7 +61,6 @@ portfolio.controller('portfolioController', function($scope) {
             data: [{
                 x: "JavaScript",
                 y: [5],
-                tooltip: "this is tooltip"
             }, {
                 x: "HTML",
                 y: [5]
@@ -69,8 +68,62 @@ portfolio.controller('portfolioController', function($scope) {
                 x: "CSS",
                 y: [5]
             }, {
-                x: "Responsive web design",
+                x: "PHP",
+                y: [4]
+            }, {
+                x: "UNIX",
+                y: [4]
+            }]
+        },
+        secondary: {
+            series: [],
+            data: [{
+                x: "SQL",
+                y: [4],
+            }, {
+                x: "NoSQL",
+                y: [4]
+            }, {
+                x: "MongoDB",
+                y: [4]
+            }]
+        },
+        concepts: {
+            series: [],
+            data: [{
+                x: "TDD/BDD",
+                y: [4],
+            }, {
+                x: "Agile",
+                y: [4]
+            }, {
+                x: "SPA",
                 y: [5]
+            }, {
+                x: "Security",
+                y: [4],
+            }, ]
+        },
+        libraries: {
+            series: [],
+            data: [{
+                x: "NodeJS",
+                y: [5],
+            }, {
+                x: "Git",
+                y: [5],
+            }, {
+                x: "JQuery",
+                y: [5],
+            }, {
+                x: "SASS/LESS",
+                y: [4],
+            }, {
+                x: "Underscore",
+                y: [5]
+            }, {
+                x: "Angular",
+                y: [4]
             }]
         }
     };

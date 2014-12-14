@@ -1,9 +1,12 @@
 .navbar {
   background-color: #2196F3; }
   .navbar .navigation {
-    color: white; }
-    .navbar .navigation .nav-selected {
-      color: #F06292; }
+    color: white;
+    text-decoration: none; }
+    .navbar .navigation .nav-link.nav-selected {
+      color: #F06292;
+      font-weight: 500;
+      text-decoration: none; }
     @media only screen and (min-width: 992px) {
       .navbar .navigation .nav-pill {
         padding: 15px; } }
@@ -12,10 +15,12 @@
         padding: 10px; } }
     .navbar .navigation .nav-link {
       padding: 5px;
-      font-weight: 100;
+      font-weight: 200;
       font-size: 18;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      text-decoration: none; }
     .navbar .navigation .nav-link:hover {
+      font-weight: 200;
       color: #F06292;
       text-decoration: none; }
     .navbar .navigation .nav-link:visited {
@@ -69,7 +74,7 @@ object.projectpdf {
 
 .angularChart {
   width: 100%;
-  height: 400px; }
+  height: 300px; }
 
 body {
   font-family: 'Roboto', sans-serif; }
