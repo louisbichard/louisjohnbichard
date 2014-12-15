@@ -5,6 +5,13 @@ portfolio.controller('blogController', function($scope, $location) {
             id: "BL123",
             author: 'Louis John Bichard',
             date: '22th November 2014',
+            path: "blog/the_power_of_nosql.md",
+            title: 'The Power Of NoSQL',
+            tags: ['Javascript', 'NoSQL', 'Databasing', 'New technologies', 'Technology', 'MongodB']
+        }, {
+            id: "BL123",
+            author: 'Louis John Bichard',
+            date: '22th November 2014',
             path: "blog/brogrammer_nutrient_timing.md",
             title: 'The Brogrammer: Nutrient timing',
             tags: ['Javascript', 'Brogrammer', 'Nutrients']
