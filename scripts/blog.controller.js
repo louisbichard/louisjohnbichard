@@ -2,6 +2,13 @@ portfolio.controller('blogController', function($scope, $location) {
     $scope.posts = [
         //"blog/brogrammer_targets.md",
         {
+            id: "BL128",
+            author: 'Louis John Bichard',
+            date: '14th December 2014',
+            path: "blog/blog_tags.md",
+            title: 'Angular: How I made the blog tags functionality for this site',
+            tags: ['functional', 'javascript', 'lodash', 'underscore', 'chaining', 'Angular']
+        }, {
             id: "BL127",
             author: 'Louis John Bichard',
             date: '14th December 2014',
