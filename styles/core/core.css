@@ -120,4 +120,16 @@ p.accent {
 .shadow-top-mid {
   box-shadow: -1px -2px rgba(0, 0, 0, 0.3); }
 
+.animated.delay-hs {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s; }
+
+.animated.delay-1 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+
+.animated.delay-2 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s; }
+
 /*# sourceMappingURL=core.css.map */

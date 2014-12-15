@@ -42,3 +42,16 @@ $window-lg: 1200px;
 .shadow-top-mid {
     box-shadow: $shadow-top-mid;
 }
+// DELAYS: ADD TO DIFFERENT FILE
+.animated.delay-hs {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+.animated.delay-1 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.animated.delay-2 {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
