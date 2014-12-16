@@ -3,8 +3,14 @@
         <h1 class="text-center animated fadeInDown"> Blog </h1>
         <blog class="animated fadeInUp" share-url="url" posts="posts" search="{{searchText}}"></blog>
     </div>
-    <div class="col-md-2 col-sm-2 col-lg-2 col-xs-2 col-md-offset-1 col-sm-offset-1 col-lg-offset-1 col-xs-offset-1 col-md-offset-1 text-center">
+    <div class="col-md-2 col-sm-2 col-lg-2 col-xs-2 text-center">
+        <h3> By Date </h3>
+        <accordion>
+            <accordion-group heading="{{date_grouping}}" ng-repeat="(date_grouping, blogs) in dates">
+                <p class="blog-taglist" ng-class="{'accent': searchText === blog.title}" ng-click="addTagToSearch(blog.title)" ng-repeat="blog in blogs"> {{blog.title}}</p>
+            </accordion-group>
+        </accordion>
         <h3> Tags </h3>
-        <p class="blog-taglist " ng-class="{'accent': searchText === tag.name}" ng-click="addTagToSearch(tag)" ng-repeat='tag in tags'>{{tag.name}}&nbsp; ({{tag.count}})</p>
+        <p class="blog-taglist" ng-class="{'accent': searchText === tag.name}" ng-click="addTagToSearch(tag.name)" ng-repeat='tag in tags'>{{tag.name}}&nbsp; ({{tag.count}})</p>
     </div>
 </div>

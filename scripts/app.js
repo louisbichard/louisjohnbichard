@@ -1,2 +1,1 @@
-portfolio = angular.module('portfolio', ['ngRoute', 'angularCharts', 'ngSanitize', 'angular-blog']);
-
+portfolio = angular.module('portfolio', ['ngRoute', 'angularCharts', 'ngSanitize', 'angular-blog', 'ui.bootstrap']);

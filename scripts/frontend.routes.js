@@ -9,13 +9,17 @@ portfolio.config(function($routeProvider) {
         templateUrl: '../views/home.html'
     })
 
-
     .when('/portfolio', {
         controller: 'portfolioController',
         templateUrl: '../views/portfolio.html'
     })
 
     .when('/blog', {
+        templateUrl: '../views/blog.html',
+        controller: 'blogController'
+    })
+
+    .when('/blog/:blog_title', {
         templateUrl: '../views/blog.html',
         controller: 'blogController'
     })

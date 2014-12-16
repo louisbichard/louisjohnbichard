@@ -21,11 +21,11 @@ Note: This is written as an angular controller. Don't fear, it doesn't make much
 	    $scope.posts = [
 	        {
 	            path: "blog/blog_tags.md",
-	            title: 'Angular: How I made the blog tags functionality for this site',
+	            title: 'Angular',
 	            tags: ['functional', 'javascript']
 	        }, {
 	            path: "blog/a_template_for_style_guides.md",
-	            title: 'A template for style guides',
+	            title: 'Style guides',
 	            tags: ['CSS', 'SASS']
 	        },        
 	    ];
