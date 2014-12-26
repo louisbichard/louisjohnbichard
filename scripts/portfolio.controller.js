@@ -38,6 +38,14 @@ portfolio.controller('portfolioController', function($scope) {
             img: "../img/projects/brogrammer/brogrammericon.png",
             url: "brogrammer"
         }]
+    }, {
+        name: 'Project Euler',
+        projects: [{
+            title: "Completed",
+            description: "A collection of my project Euler solutions",
+            img: "../img/euler.jpg",
+            url: "project_euler"
+        }]
     }];
     // COMPETENCIES
     $scope.config = {
