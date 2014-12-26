@@ -37,10 +37,6 @@ portfolio.config(function($routeProvider) {
     })
 
     // #PROJECTS 
-    .when('/project_euler', {
-        templateUrl: '../views/projects/project_euler.html'
-    })
-
     .when('/angular_blog', {
         templateUrl: '../views/projects/angular_blog.html'
     })

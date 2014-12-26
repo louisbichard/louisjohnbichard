@@ -7,7 +7,7 @@ portfolio.controller('portfolioController', function($scope) {
             title: "Survivors United",
             description: "Survivors United is a full Javascript MEAN dashboard application stack",
             img: "../img/projects/final_year_project/coffeehouse_laptop.jpg",
-            url: "survivors_united"
+            url: "#survivors_united"
         }],
     }, {
         name: 'Design',
@@ -15,7 +15,7 @@ portfolio.controller('portfolioController', function($scope) {
             title: "Survivors United Designs",
             description: "Survivors United is a full Javascript application stack",
             img: "../img/projects/final_year_project/mock.jpg",
-            url: "survivors_united_designs"
+            url: "#survivors_united_designs"
         }]
     }, {
         name: 'Plugins',
@@ -23,12 +23,12 @@ portfolio.controller('portfolioController', function($scope) {
             title: "Angular Progress Bar",
             description: "Angular-progress bar is a directive based plugin for simple and elegant progress bars with a material design twist",
             img: "../img/projects/angular-percentagebar/percentagebar1.png",
-            url: "angular_percentagebar"
+            url: "#angular_percentagebar"
         }, {
             title: "Angular blog",
             description: "Angular blog is a simple blog directive for parsing and creating markdown based blogs ",
             img: "../img/projects/angular-blog/angular-blog.png",
-            url: "angular_blog"
+            url: "#angular_blog"
         }]
     }, {
         name: 'Authored Work',
@@ -36,15 +36,15 @@ portfolio.controller('portfolioController', function($scope) {
             title: "The Brogrammer",
             description: "An online series of blog posts that exemplify successful traits in projects and in life, exemplified through the use of weightlifting and programming",
             img: "../img/projects/brogrammer/brogrammericon.png",
-            url: "brogrammer"
+            url: "#brogrammer"
         }]
     }, {
-        name: 'Project Euler',
+        name: 'Theoretical',
         projects: [{
-            title: "Completed",
-            description: "A collection of my project Euler solutions",
+            title: "Project Euler",
+            description: "Project Euler is a collection of mathmatical based problems to be solved through programming. The following are my solutions in varying languages",
             img: "../img/euler.jpg",
-            url: "project_euler"
+            url: "//github.com/louisbichard/project_euler"
         }]
     }];
     // COMPETENCIES
@@ -142,5 +142,5 @@ portfolio.controller('portfolioController', function($scope) {
             title: "Team Projects",
             description: "University module group task LAMP stack timetabling dashboard",
             img: "../img/projects/final_year_project/close_up.jpg",
-            url: "#"
+            url: "##"
         }*/
