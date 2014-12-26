@@ -41,7 +41,7 @@ portfolio.controller('portfolioController', function($scope) {
     }];
     // COMPETENCIES
     $scope.config = {
-        tooltips: false,
+        tooltips: true,
         yAxisTickFormat: 's', //refer tickFormats in d3 to edit this value
         colors: ['#F06292'],
         labels: false,
@@ -49,7 +49,7 @@ portfolio.controller('portfolioController', function($scope) {
         mouseout: function() {},
         click: function() {},
         legend: {
-            display: false,
+            display: true,
             //could be 'left, right'
             position: 'right'
         }
@@ -62,16 +62,16 @@ portfolio.controller('portfolioController', function($scope) {
                 x: "JavaScript",
                 y: [5],
             }, {
-                x: "HTML",
+                x: "HTML/CSS",
                 y: [5]
             }, {
-                x: "CSS",
-                y: [5]
+                x: "Python",
+                y: [3]
             }, {
                 x: "PHP",
                 y: [4]
             }, {
-                x: "UNIX",
+                x: "Linux",
                 y: [4]
             }]
         },
@@ -81,10 +81,7 @@ portfolio.controller('portfolioController', function($scope) {
                 x: "SQL",
                 y: [4],
             }, {
-                x: "NoSQL",
-                y: [4]
-            }, {
-                x: "MongoDB",
+                x: "NoSQL & Mongo",
                 y: [4]
             }]
         },
@@ -97,12 +94,9 @@ portfolio.controller('portfolioController', function($scope) {
                 x: "Agile",
                 y: [4]
             }, {
-                x: "SPA",
+                x: "SPA's",
                 y: [5]
-            }, {
-                x: "Security",
-                y: [4],
-            }, ]
+            }]
         },
         libraries: {
             series: [],
