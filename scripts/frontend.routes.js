@@ -36,7 +36,7 @@ portfolio.config(function($routeProvider) {
         templateUrl: '../views/contact_me.html'
     })
 
-    // #PROJECTS
+    // #PROJECTS 
     .when('/angular_blog', {
         templateUrl: '../views/projects/angular_blog.html'
     })
