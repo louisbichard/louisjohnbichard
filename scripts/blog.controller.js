@@ -85,8 +85,6 @@ portfolio.controller('blogController', function($scope, $location, $route) {
         .groupBy('date_month_year')
         .value();
 
-    console.log($scope.dates);
-
     $scope.tags =
         _.chain($scope.posts)
         // CREATE ARRAY OF ALL TAGS
