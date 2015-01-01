@@ -4,6 +4,12 @@ portfolio.controller('blogController', function($scope, $location, $route) {
 
     $scope.posts = [{
         author: 'Louis John Bichard',
+        date: '1st January 2015',
+        path: "blog/hypomania.md",
+        title: 'The Brogrammer series: Exercise induced hypomania',
+        tags: ['Fartlek training', 'Brogrammer', 'HIIT training']
+    }, {
+        author: 'Louis John Bichard',
         date: '23rd December 2014',
         path: "blog/patternanalysis.md",
         title: 'The Brogrammer series: Pattern analysis',
@@ -73,11 +79,13 @@ portfolio.controller('blogController', function($scope, $location, $route) {
         _.chain($scope.posts)
         .map(function(curr) {
             var date_parts = curr.date.split(' ');
-            curr.date_month_year = date_parts[1] + " " + date_parts[2];
+            curr.date_month_year = date_parts[2];
             return curr;
         })
         .groupBy('date_month_year')
         .value();
+
+    console.log($scope.dates);
 
     $scope.tags =
         _.chain($scope.posts)
