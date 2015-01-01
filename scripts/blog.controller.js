@@ -5,6 +5,12 @@ portfolio.controller('blogController', function($scope, $location, $route) {
     $scope.posts = [{
         author: 'Louis John Bichard',
         date: '1st January 2015',
+        path: "blog/triggerpoint.md",
+        title: 'The Brogrammer series: Trigger point therapy',
+        tags: ['Trigger point therapy', 'Brogrammer', 'SMFR']
+    }, {
+        author: 'Louis John Bichard',
+        date: '1st January 2015',
         path: "blog/hypomania.md",
         title: 'The Brogrammer series: Exercise induced hypomania',
         tags: ['Fartlek training', 'Brogrammer', 'HIIT training']
