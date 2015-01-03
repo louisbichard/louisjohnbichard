@@ -4,6 +4,12 @@ portfolio.controller('blogController', function($scope, $location, $route) {
 
     $scope.posts = [{
         author: 'Louis John Bichard',
+        date: '2nd January 2015',
+        path: "blog/circles.md",
+        title: "The Brogrammer series: Circle of Concern",
+        tags: ['Brogrammer', 'Circle of Concern', 'Stress', 'Effectiveness', 'Efficiency']
+    }, {
+        author: 'Louis John Bichard',
         date: '1st January 2015',
         path: "blog/triggerpoint.md",
         title: 'The Brogrammer series: Trigger point therapy',
@@ -63,7 +69,6 @@ portfolio.controller('blogController', function($scope, $location, $route) {
         title: 'Javascript Unit Tests Spies Explained',
         tags: ['Javascript', 'Unit testing', 'Testing', 'Development', 'Programming', 'Efficiency']
     }, {
-
         author: 'Louis John Bichard',
         date: '14th November 2014',
         path: "blog/brogrammer_patience.md",
