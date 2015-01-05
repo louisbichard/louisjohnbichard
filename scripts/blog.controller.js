@@ -4,6 +4,12 @@ portfolio.controller('blogController', function($scope, $location, $route) {
 
     $scope.posts = [{
         author: 'Louis John Bichard',
+        date: '5th January 2015',
+        path: "blog/productivitytools.md",
+        title: "Top 16 developer productivity tools",
+        tags: ['Effectivness', 'Productivity']
+    }, {
+        author: 'Louis John Bichard',
         date: '2nd January 2015',
         path: "blog/circles.md",
         title: "The Brogrammer series: Circle of Concern",
