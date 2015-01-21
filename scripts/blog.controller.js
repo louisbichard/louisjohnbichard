@@ -4,6 +4,12 @@ portfolio.controller('blogController', function($scope, $location, $route) {
 
     $scope.posts = [{
         author: 'Louis John Bichard',
+        date: '19th January 2015',
+        path: "blog/travisci.md",
+        title: "Travis Continuous Integration",
+        tags: ['Continuous Integration', 'Node', 'Bower', 'NPM', 'Travis CI']
+    }, {
+        author: 'Louis John Bichard',
         date: '5th January 2015',
         path: "blog/smallcommitments.md",
         title: "The Brogrammer: Small commitments for habit forming",
