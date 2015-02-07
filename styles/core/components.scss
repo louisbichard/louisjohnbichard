@@ -12,17 +12,23 @@
         .nav-selected.hvr-underline-from-left:before {
             background: $color-main;
         }
+        a.nav-link:hover {
+            color: $color-accent;
+        }
         .nav-selected {
+            a {
+                color: $color-accent;
+            }
             border-bottom-width: 4px;
             border-bottom-color: $color-accent;
             border-bottom-style: solid;
             height: 55px;
         }
         .nav-selected > a {
-            color: #FFFFFF;
+            color: $color-accent;
         }
         .nav-selected > a:hover {
-            color: #FFFFFF;
+            color: $color-accent;
         }
         @media only screen and (min-width: $window-md) {
             .nav-pill {

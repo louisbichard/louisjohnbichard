@@ -4,18 +4,22 @@
     color: white;
     text-decoration: none; }
     .navbar .navigation .hvr-underline-from-left:before {
-      background: #F06292; }
+      background: #F50057; }
     .navbar .navigation .nav-selected.hvr-underline-from-left:before {
       background: #2196F3; }
+    .navbar .navigation a.nav-link:hover {
+      color: #F50057; }
     .navbar .navigation .nav-selected {
       border-bottom-width: 4px;
-      border-bottom-color: #F06292;
+      border-bottom-color: #F50057;
       border-bottom-style: solid;
       height: 55px; }
+      .navbar .navigation .nav-selected a {
+        color: #F50057; }
     .navbar .navigation .nav-selected > a {
-      color: #FFFFFF; }
+      color: #F50057; }
     .navbar .navigation .nav-selected > a:hover {
-      color: #FFFFFF; }
+      color: #F50057; }
     @media only screen and (min-width: 992px) {
       .navbar .navigation .nav-pill {
         padding: 15px; } }
@@ -66,7 +70,7 @@
   background-color: #333;
   height: 3px; }
 .angular-blog .blog-metadata, .angular-blog .blog-tags, .angular-blog .blog-link {
-  color: #F06292;
+  color: #F50057;
   opacity: 54; }
 
 .blog-taglist {
@@ -75,7 +79,7 @@
 input {
   padding: 5px;
   border-top: 0px;
-  border-color: #F06292;
+  border-color: #F50057;
   border-right: 0px;
   border-left: 0px; }
 
@@ -89,7 +93,7 @@ object.projectpdf {
 
 .panel-default > .panel-heading {
   background-color: white;
-  color: #F06292; }
+  color: #F50057; }
 
 body {
   font-family: 'Roboto', sans-serif; }
@@ -107,7 +111,7 @@ p.note {
   color: white; }
 
 p.accent {
-  color: #F06292; }
+  color: #F50057; }
 
 .background-main {
   background-color: #2196F3; }
@@ -116,7 +120,7 @@ p.accent {
   background-color: #64B5F6; }
 
 .background-accent {
-  background-color: #F06292; }
+  background-color: #F50057; }
 
 .shadow-low {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
