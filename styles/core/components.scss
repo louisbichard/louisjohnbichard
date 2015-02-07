@@ -24,6 +24,17 @@
             border-bottom-style: solid;
             height: 55px;
         }
+        @media only screen and (max-width: $window-md) {
+            .nav-selected {
+                height: 55px;
+            }
+        }
+        @media only screen and (max-width: $window-sm) {
+            .nav-selected {
+                height: 45px;
+            }
+        }
+        //height: 55px;
         .nav-selected > a {
             color: $color-accent;
         }
@@ -53,37 +64,6 @@
         }
     }
 }
-// #CONTENT
-// ## LARGE SCREEN
-@media only screen and (min-width: $window-md) {
-    div.content {
-        margin: {
-            top: 135px;
-        }
-    }
-}
-// ## MEDIUM SCREEN
-@media only screen and (min-width: $window-sm) and (max-width: $window-md) {
-    div.content {
-        margin-top: 50px;
-    }
-}
-// ## SMALL SCREEN
-@media only screen and (min-width: $window-sm) and (max-width: $window-md) {
-    div.content {
-        margin: {
-            top: 135px;
-        }
-    }
-}
-// ## X-SMALL SCREEN
-@media only screen and (min-width: $window-xs) and (max-width: $window-sm) {
-    div.content {
-        margin: {
-            top: 135px;
-        }
-    }
-}
 // ##FOOTER
 #wrapper {
     padding-bottom: 140px;
@@ -94,7 +74,7 @@
     box-shadow: $shadow-top-mid;
     background-color: #64B5F6;
     position: absolute;
-    bottom: -17px;
+    bottom: -152px;
     left: 0;
     width: 104%;
 }

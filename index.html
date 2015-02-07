@@ -21,14 +21,14 @@
 
 <body ng-controller="mainController">
     <div id="wrapper">
-        <nav class="navbar navbar-default navbar-fixed-top animated fadeInDown shadow-mid" role="navigation">
+        <nav class="navbar navbar-default animated fadeInDown shadow-mid" role="navigation">
             <div class="row">
                 <div class="col-md-12">
                     <h3 class="text-center text-white"> Louis John Bichard </h3>
                 </div>
             </div>
             <div class="row text-center navigation">
-                <div ng-class="{'nav-selected': location === 'home'}" class="col-md-2 col-sm-2 col-xs-2 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 nav-pill hvr-underline-from-left">
+                <div ng-class="{'nav-selected': location === 'home'}" class="col-md-2 col-sm-2 col-xs-2 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 nav-pill hvr-underline-from-left">
                     <a class="nav-link text-white" href="#home">Home</a>
                 </div>
                 <div ng-class="{'nav-selected': location === 'about'}" class="col-md-2 col-sm-2 col-xs-2 nav-pill hvr-underline-from-left">
@@ -40,9 +40,6 @@
                 <div ng-class="{'nav-selected': location === 'blog'}" class="col-md-2 col-sm-2 col-xs-2  nav-pill hvr-underline-from-left">
                     <a class="nav-link text-white" href="#blog">blog</a>
                 </div>
-                <div ng-class="{'nav-selected': location === 'contact_me'}" class="col-md-2 col-sm-2 col-xs-2  nav-pill hvr-underline-from-left">
-                    <a class="nav-link text-white" href="#contact_me">Contact</a>
-                </div>
             </div>
         </nav>
 
@@ -51,11 +48,6 @@
             <div ng-view class="animated fadeIn">
             </div>
         </div>
-
-
-        <!-- TODO: REMOVE THESE AND REPLACE WITH MARGIN -->
-        <br>
-        <br>
 
         <!-- #FOOTER -->
         <div class="row footer animated fadeInUp shadow-top-mid">
@@ -77,6 +69,17 @@
                         </a>
                     </div>
                 </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-3 col-md-offset-3">
+                        <p> 07506 934 678 </p>
+                    </div>
+                    <div class="col-md-3">
+                        <p> louisjohnbichard@gmail.com </p>
+                    </div>
+                </div>
+
+
                 <br>
             </div>
         </div>
