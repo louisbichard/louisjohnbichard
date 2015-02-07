@@ -3,10 +3,19 @@
   .navbar .navigation {
     color: white;
     text-decoration: none; }
-    .navbar .navigation .nav-link.nav-selected {
-      color: #F06292;
-      font-weight: 500;
-      text-decoration: none; }
+    .navbar .navigation .hvr-underline-from-left:before {
+      background: #F06292; }
+    .navbar .navigation .nav-selected.hvr-underline-from-left:before {
+      background: #2196F3; }
+    .navbar .navigation .nav-selected {
+      border-bottom-width: 4px;
+      border-bottom-color: #F06292;
+      border-bottom-style: solid;
+      height: 55px; }
+    .navbar .navigation .nav-selected > a {
+      color: #FFFFFF; }
+    .navbar .navigation .nav-selected > a:hover {
+      color: #FFFFFF; }
     @media only screen and (min-width: 992px) {
       .navbar .navigation .nav-pill {
         padding: 15px; } }
@@ -15,15 +24,12 @@
         padding: 10px; } }
     .navbar .navigation .nav-link {
       padding: 5px;
-      font-weight: 200;
+      font-weight: 400;
       font-size: 18;
       text-transform: uppercase;
       text-decoration: none; }
-    .navbar .navigation .nav-link:hover {
-      font-weight: 200;
-      color: #F06292;
-      text-decoration: none; }
     .navbar .navigation .nav-link:visited {
+      color: white;
       text-decoration: none; }
 
 @media only screen and (min-width: 992px) {
