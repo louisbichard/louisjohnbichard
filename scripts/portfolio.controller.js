@@ -8,6 +8,11 @@ portfolio.controller('portfolioController', function($scope) {
             description: "Survivors United is a full Javascript MEAN dashboard application stack",
             img: "../img/projects/final_year_project/coffeehouse_laptop.jpg",
             url: "#survivors_united"
+        }, {
+            title: "Absenteeism booking",
+            description: "A demo application for booking absenteeism (Angular)",
+            img: "../img/projects/absenteeism_booking/system2.png",
+            url: "#absenteeism_booking"
         }],
     }, {
         name: 'Design',
