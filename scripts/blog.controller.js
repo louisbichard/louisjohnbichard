@@ -5,6 +5,12 @@ portfolio.controller('blogController', function($scope, $location, $route) {
     $scope.posts = [{
         author: 'Louis John Bichard',
         date: '19th January 2015',
+        path: "blog/functionalprogrammingintro.md",
+        title: "Functional Programming: Moving on from for loops",
+        tags: ['Lodash', 'Functional', 'Javascript', 'First-Order functions']
+    }, {
+        author: 'Louis John Bichard',
+        date: '19th January 2015',
         path: "blog/travisci.md",
         title: "Travis Continuous Integration",
         tags: ['Continuous Integration', 'Node', 'Bower', 'NPM', 'Travis CI']
@@ -106,12 +112,12 @@ portfolio.controller('blogController', function($scope, $location, $route) {
 
     $scope.dates =
         _.chain($scope.posts)
-        .map(function(curr) {
+        // TODO: SORT BY DATE
+        .groupBy(function(curr) {
             var date_parts = curr.date.split(' ');
-            curr.date_month_year = date_parts[2];
-            return curr;
+            console.log(date_parts[1] + date_parts[2]);
+            return date_parts[1] + ' ' + date_parts[2];
         })
-        .groupBy('date_month_year')
         .value();
 
     $scope.tags =
