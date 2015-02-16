@@ -4,7 +4,7 @@ portfolio.controller('blogController', function($scope, $location, $route) {
 
     $scope.posts = [{
         author: 'Louis John Bichard',
-        date: '19th January 2015',
+        date: '7th February 2015',
         path: "blog/functionalprogrammingintro.md",
         title: "Functional Programming: Moving on from for loops",
         tags: ['Lodash', 'Functional', 'Javascript', 'First-Order functions']
