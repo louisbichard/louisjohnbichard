@@ -1,5 +1,5 @@
 <!-- #ALL PROJECTS -->
-<div ng-repeat="section in sections" class="animated" ng-class="{'fadeInRight': $index%2, 'fadeInLeft': !$index%2}">
+<div ng-repeat="section in sections">
     <div class="row">
         <div class="col-md-12">
             <div class="row">
@@ -33,25 +33,4 @@
         </div>
     </div>
     <hr>
-</div>
-
-<h1 class="text-center"> Competencies </h1>
-
-<div class="row animated fadeInUp">
-    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6">
-        <h3 class="text-center"> Core </h3>
-        <div data-ac-chart="'bar'" data-ac-data="data.core" data-ac-config="config" class="chart angularChart"></div>
-    </div>
-    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6">
-        <h3 class="text-center">  Databases </h3>
-        <div data-ac-chart="'bar'" data-ac-data="data.secondary" data-ac-config="config" class="chart angularChart"></div>
-    </div>
-    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6">
-        <h3 class="text-center">  Concepts </h3>
-        <div data-ac-chart="'bar'" data-ac-data="data.concepts" data-ac-config="config" class="chart angularChart"></div>
-    </div>
-    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6">
-        <h3 class="text-center">  Libraries </h3>
-        <div data-ac-chart="'bar'" data-ac-data="data.libraries" data-ac-config="config" class="chart angularChart"></div>
-    </div>
 </div>

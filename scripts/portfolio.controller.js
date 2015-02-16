@@ -8,6 +8,11 @@ portfolio.controller('portfolioController', function($scope) {
             description: "Survivors United is a full Javascript MEAN dashboard application stack",
             img: "../img/projects/final_year_project/coffeehouse_laptop.jpg",
             url: "#survivors_united"
+        }, {
+            title: "Absenteeism booking",
+            description: "A demo application for booking absenteeism (Angular)",
+            img: "../img/projects/absenteeism_booking/system2.png",
+            url: "#absenteeism_booking"
         }],
     }, {
         name: 'Design',
@@ -62,85 +67,4 @@ portfolio.controller('portfolioController', function($scope) {
             position: 'right'
         }
     };
-
-    $scope.data = {
-        core: {
-            series: [],
-            data: [{
-                x: "JavaScript",
-                y: [5],
-            }, {
-                x: "HTML",
-                y: [5]
-            }, {
-                x: "CSS",
-                y: [5]
-            }, {
-                x: "PHP",
-                y: [4]
-            }, {
-                x: "UNIX",
-                y: [4]
-            }]
-        },
-        secondary: {
-            series: [],
-            data: [{
-                x: "SQL",
-                y: [4],
-            }, {
-                x: "NoSQL",
-                y: [4]
-            }, {
-                x: "MongoDB",
-                y: [4]
-            }]
-        },
-        concepts: {
-            series: [],
-            data: [{
-                x: "TDD/BDD",
-                y: [4],
-            }, {
-                x: "Agile",
-                y: [4]
-            }, {
-                x: "SPA",
-                y: [5]
-            }, {
-                x: "Security",
-                y: [4],
-            }, ]
-        },
-        libraries: {
-            series: [],
-            data: [{
-                x: "NodeJS",
-                y: [5],
-            }, {
-                x: "Git",
-                y: [5],
-            }, {
-                x: "JQuery",
-                y: [5],
-            }, {
-                x: "SASS/LESS",
-                y: [4],
-            }, {
-                x: "Underscore",
-                y: [5]
-            }, {
-                x: "Angular",
-                y: [4]
-            }]
-        }
-    };
-
 });
-
-/* ,{
-            title: "Team Projects",
-            description: "University module group task LAMP stack timetabling dashboard",
-            img: "../img/projects/final_year_project/close_up.jpg",
-            url: "##"
-        }*/
