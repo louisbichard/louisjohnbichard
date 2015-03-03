@@ -115,7 +115,6 @@ portfolio.controller('blogController', function($scope, $location, $route) {
         // TODO: SORT BY DATE
         .groupBy(function(curr) {
             var date_parts = curr.date.split(' ');
-            console.log(date_parts[1] + date_parts[2]);
             return date_parts[1] + ' ' + date_parts[2];
         })
         .value();
