@@ -13,6 +13,11 @@ portfolio.controller('portfolioController', function($scope) {
             description: "A demo application for booking absenteeism (Angular)",
             img: "../img/projects/absenteeism_booking/system2.png",
             url: "#absenteeism_booking"
+        }, {
+            title: "XML based Site",
+            description: "University module to create a web page using XML and XSLT technologies",
+            img: "../img/projects/xml/home.png",
+            url: "#xml_site"
         }],
     }, {
         name: 'Design',
