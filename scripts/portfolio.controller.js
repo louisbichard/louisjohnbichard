@@ -18,6 +18,11 @@ portfolio.controller('portfolioController', function($scope) {
             description: "University module to create a web page using XML and XSLT technologies",
             img: "../img/projects/xml/home.png",
             url: "#xml_site"
+        }, {
+            title: "Lisa Jane Griffin",
+            description: "One page scrolling website for Inspirational Speaker and Consultant",
+            img: "../img/projects/lisajanegriffin/home.png",
+            url: "#lisajanegriffin"
         }],
     }, {
         name: 'Design',
