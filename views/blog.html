@@ -5,8 +5,8 @@
     <div class="col-md-2 col-sm-2 col-lg-2 col-xs-2 text-center">
         <h3> By Date </h3>
         <accordion>
-            <accordion-group heading="{{date_grouping}}" ng-repeat="(date_grouping, blogs) in dates">
-                <p class="blog-taglist" ng-class="{'accent': searchText === blog.title}" ng-click="addTagToSearch(blog.title)" ng-repeat="blog in blogs"> {{blog.title}}</p>
+            <accordion-group heading="{{blogs.date}}" ng-repeat="blogs in dates">
+                    <p class="blog-taglist" ng-class="{'accent': searchText === blog.title}" ng-click="addTagToSearch(blog.title)" ng-repeat="blog in blogs.values"> {{blog.title}}</p>
             </accordion-group>
         </accordion>
         <h3> Tags </h3>

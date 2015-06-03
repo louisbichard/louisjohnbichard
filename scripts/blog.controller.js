@@ -112,11 +112,17 @@ portfolio.controller('blogController', function($scope, $location, $route) {
 
     $scope.dates =
         _.chain($scope.posts)
-        // TODO: SORT BY DATE
         .groupBy(function(curr) {
             var date_parts = curr.date.split(' ');
             return date_parts[1] + ' ' + date_parts[2];
         })
+        .reduce(function(prev, values, date) {
+            prev.push({
+                date: date,
+                values: values
+            });
+            return prev;
+        }, [])
         .value();
 
     $scope.tags =
