@@ -25,6 +25,14 @@ portfolio.controller('portfolioController', function($scope) {
             url: "#lisajanegriffin"
         }],
     }, {
+        name: 'Presentations',
+        projects: [{
+            title: "Lodash presentation",
+            description: "A fairly low level short talk given on the context of functional programming and levarage / usage of Lodash methods (hosted on github)",
+            img: "../img/projects/presentations/functional.png",
+            url: "http://louisbichard.github.io/lodash-talk"
+        }]
+    }, {
         name: 'Design',
         projects: [{
             title: "Survivors United Designs",
