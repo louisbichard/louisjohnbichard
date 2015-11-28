@@ -7,19 +7,21 @@
                     <h2> {{section.name}} </h2>
                 </div>
                 <div class="col-md-4 col-md-offset-4 col-sm-5 col-sm-offset-4 col-xs-5 col-xs-offset-4">
-
                     <!-- ##PROJECTS -->
                     <div ng-repeat="project in section.projects">
+                        <br>
+                        <br>
+                        <br>
                         <div class="row">
                             <div class="col-md-12">
-                                <h3 class="text-center"> {{project.title}} </h3>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <a href="{{project.url}}">
+                                <a href="{{project.url}}">
+                                    <h3 class="text-center"> {{project.title}} </h3>
+                                    <div class="row">
+                                        <div class="col-md-12">
                                             <img class="img-responsive" src="{{project.img}}">
-                                        </a>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <div class="row">

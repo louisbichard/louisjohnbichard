@@ -60,6 +60,18 @@ portfolio.controller('portfolioController', function($scope) {
             description: "An online series of blog posts that exemplify successful traits in projects and in life, exemplified through the use of weightlifting and programming",
             img: "../img/projects/brogrammer/brogrammericon.png",
             url: "#brogrammer"
+        }, {
+            title: "Anonymous functions as code comments",
+            img: "../img/projects/blogs/code.png",
+            url: "https://louisjohnbichard.wordpress.com/2015/11/15/anonymous-functions-as-code-comments/"
+        }, {
+            title: "Fixing performance on large angular models with debounce",
+            img: "../img/projects/blogs/debounce.png",
+            url: "https://louisjohnbichard.wordpress.com/2015/11/01/fixing-performance-on-large-angular-models-with-debounce/"
+        }, {
+            title: "_.every as a clean up for boolean operators",
+            img: "../img/projects/blogs/every.png",
+            url: "https://louisjohnbichard.wordpress.com/2015/10/09/_-every-as-a-clean-up-for-boolean-operators/"
         }]
     }, {
         name: 'Theoretical',
