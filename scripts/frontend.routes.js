@@ -19,6 +19,10 @@ portfolio.config(function($routeProvider) {
         controller: 'blogController'
     })
 
+    .when('/reading', {
+        templateUrl: '../views/reading.html'
+    })
+
     .when('/blog/:blog_title', {
         templateUrl: '../views/blog.html',
         controller: 'blogController'

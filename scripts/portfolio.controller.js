@@ -38,6 +38,14 @@ portfolio.controller('portfolioController', function($scope) {
             url: "http://louisbichard.github.io/precompilers-talk/#/"
         }]
     }, {
+        name: 'Content',
+        projects: [{
+            title: "Reading",
+            description: "Notable books I have read",
+            img: "../img/projects/reading/javascriptthegoodparts.png",
+            url: "#reading"
+        }]
+    }, {
         name: 'Design',
         projects: [{
             title: "Survivors United Designs",
