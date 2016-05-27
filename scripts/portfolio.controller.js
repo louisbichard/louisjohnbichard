@@ -23,6 +23,11 @@ portfolio.controller('portfolioController', function($scope) {
             description: "One page scrolling website for Inspirational Speaker and Consultant",
             img: "../img/projects/lisajanegriffin/home.png",
             url: "#lisajanegriffin"
+        }, {
+            title: "Moon penny",
+            description: "HTML/CSS Website designed and created from Scratch for Moon Penny.",
+            img: "../img/projects/moonpenny/landing.png",
+            url: "#moonpenny"
         }],
     }, {
         name: 'Presentations / Talks',

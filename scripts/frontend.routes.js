@@ -53,6 +53,10 @@ portfolio.config(function($routeProvider) {
         templateUrl: '../views/projects/lisajanegriffin.html'
     })
 
+    .when('/moonpenny', {
+        templateUrl: '../views/projects/moonpenny.html'
+    })
+
     .when('/absenteeism_booking', {
         templateUrl: '../views/projects/absenteeism_booking.html'
     })
