@@ -7,8 +7,12 @@
       background: #F50057; }
     .navbar .navigation .nav-selected.hvr-underline-from-left:before {
       background: #2196F3; }
-    .navbar .navigation a.nav-link:hover {
-      color: #F50057; }
+    .navbar .navigation .nav-pill:hover {
+      cursor: pointer; }
+      .navbar .navigation .nav-pill:hover a {
+        color: #F50057; }
+      .navbar .navigation .nav-pill:hover a.nav-link:hover {
+        color: #F50057; }
     .navbar .navigation .nav-selected {
       border-bottom-width: 4px;
       border-bottom-color: #F50057;
@@ -63,7 +67,9 @@
   color: #333;
   background-color: #333;
   height: 3px; }
-.angular-blog .blog-metadata, .angular-blog .blog-tags, .angular-blog .blog-link {
+.angular-blog .blog-metadata,
+.angular-blog .blog-tags,
+.angular-blog .blog-link {
   color: #F50057;
   opacity: 54; }
 
@@ -104,7 +110,7 @@ p.note {
 .text-white {
   color: white; }
 
-p.accent {
+.accent {
   color: #F50057; }
 
 .books {
@@ -142,5 +148,29 @@ p.accent {
 .animated.delay-2 {
   -webkit-animation-delay: 2s;
   animation-delay: 2s; }
+
+.animated.delay-3 {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s; }
+
+.animated.delay-4 {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s; }
+
+.animated.delay-5 {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s; }
+
+.animated.delay-6 {
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s; }
+
+.animated.delay-7 {
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s; }
+
+.animated.delay-8 {
+  -webkit-animation-delay: 8s;
+  animation-delay: 8s; }
 
 /*# sourceMappingURL=core.css.map */

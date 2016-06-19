@@ -36,6 +36,14 @@ portfolio.config(function($routeProvider) {
         templateUrl: '../views/about.html'
     })
 
+    .when('/vision', {
+        templateUrl: '../views/vision.html'
+    })
+
+    .when('/skills', {
+        templateUrl: '../views/skills.html'
+    })
+
     .when('/contact_me', {
         templateUrl: '../views/contact_me.html'
     })

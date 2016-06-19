@@ -5,28 +5,31 @@
     <title>Louis John Bichard</title>
     <link rel="shortcut icon" href="./ico1.ico?v=18" />
     <meta name="google-site-verification" content="-SOOH8yDWzW1HIrnqVINS8caMpkkqRq6o9vIFgOrFEY" />
-
     <!-- #LIBRARY STYLES -->
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css?v=18">
     <link rel="stylesheet" type="text/css" href="styles/lib/animate.css?v=18">
     <link rel="stylesheet" type="text/css" href="bower_components/Hover/css/hover-min.css?v=18">
     <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css?v=18">
-
     <!-- #FONTS -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css?v=18'>
-
     <!-- #CUSTOM STYLES -->
     <link rel="stylesheet" type="text/css" href="styles/core/core.css?v=18">
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-60078804-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    ga('create', 'UA-60078804-1', 'auto');
+    ga('send', 'pageview');
+    </script>
 </head>
 
 <body ng-controller="mainController">
@@ -35,14 +38,21 @@
             <div class="row">
                 <div class="col-md-12">
                     <h3 class="text-center text-white"> Louis John Bichard </h3>
+                    <p class="text-center text-white">"More than just immaculate code"</p>
                 </div>
             </div>
             <div class="row text-center navigation">
-                <div ng-class="{'nav-selected': location === 'home'}" class="col-md-2 col-sm-2 col-xs-2 col-xs-offset-2 col-sm-offset-2 col-md-offset-2 nav-pill hvr-underline-from-left">
+                <div ng-class="{'nav-selected': location === 'home'}" class="col-md-2 col-sm-2 col-xs-2 nav-pill hvr-underline-from-left">
                     <a class="nav-link text-white" href="#home">Home</a>
                 </div>
                 <div ng-class="{'nav-selected': location === 'about'}" class="col-md-2 col-sm-2 col-xs-2 nav-pill hvr-underline-from-left">
                     <a class="nav-link text-white" href="#about">About</a>
+                </div>
+                <div ng-class="{'nav-selected': location === 'vision'}" class="col-md-2 col-sm-2 col-xs-2 nav-pill hvr-underline-from-left">
+                    <a class="nav-link text-white" href="#vision">Vision &amp; Values</a>
+                </div>
+                <div ng-class="{'nav-selected': location === 'skills'}" class="col-md-2 col-sm-2 col-xs-2 nav-pill hvr-underline-from-left">
+                    <a class="nav-link text-white" href="#skills">Skills</a>
                 </div>
                 <div ng-class="{'nav-selected': location === 'portfolio'}" class="col-md-2 col-sm-2 col-xs-2 nav-pill hvr-underline-from-left">
                     <a class="nav-link text-white" href="#portfolio">Portfolio</a>
@@ -52,13 +62,11 @@
                 </div>
             </div>
         </nav>
-
         <!-- #CONTENT -->
         <div class="container content">
             <div ng-view class="animated fadeIn">
             </div>
         </div>
-
         <!-- #FOOTER -->
         <div class="row footer animated fadeInUp shadow-top-mid">
             <div class="col-md-12 text-center text-white">
@@ -88,16 +96,11 @@
                         <p> contact@louisjohnbichard.co.uk </p>
                     </div>
                 </div>
-
-
                 <br>
             </div>
         </div>
     </div>
-
-
     <!-- #SCRIPTS -->
-
     <!-- ##BOWER PACKAGES -->
     <script src="bower_components/jquery/dist/jquery.min.js?v=18"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js?v=18"></script>
@@ -111,7 +114,6 @@
     <script src="bower_components/showdown/compressed/showdown.js?v=18"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js?v=18"></script>
     <script src="bower_components/moment/min/moment.min.js?v=18"></script>
-
     <!-- ##ANGULAR FRAMEWORKING -->
     <script src="scripts/app.js?v=18"></script>
     <script src="scripts/frontend.routes.js?v=18"></script>
