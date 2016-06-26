@@ -3,17 +3,17 @@
 <head>
     <!-- #SITE SETUP -->
     <title>Louis John Bichard</title>
-    <link rel="shortcut icon" href="./ico1.ico?v=18" />
+    <link rel="shortcut icon" href="./ico1.ico?v=19" />
     <meta name="google-site-verification" content="-SOOH8yDWzW1HIrnqVINS8caMpkkqRq6o9vIFgOrFEY" />
     <!-- #LIBRARY STYLES -->
-    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css?v=18">
-    <link rel="stylesheet" type="text/css" href="styles/lib/animate.css?v=18">
-    <link rel="stylesheet" type="text/css" href="bower_components/Hover/css/hover-min.css?v=18">
-    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css?v=18">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css?v=19">
+    <link rel="stylesheet" type="text/css" href="styles/lib/animate.css?v=19">
+    <link rel="stylesheet" type="text/css" href="bower_components/Hover/css/hover-min.css?v=19">
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css?v=19">
     <!-- #FONTS -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css?v=18'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css?v=19'>
     <!-- #CUSTOM STYLES -->
-    <link rel="stylesheet" type="text/css" href="styles/core/core.css?v=18">
+    <link rel="stylesheet" type="text/css" href="styles/core/core.css?v=19">
     <script>
     (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
@@ -38,27 +38,31 @@
             <div class="row">
                 <div class="col-md-12">
                     <h3 class="text-center text-white"> Louis John Bichard </h3>
-                    <p class="text-center text-white">"More than just immaculate code"</p>
+                    <p class="text-center text-white">'More than just immaculate code'</p>
                 </div>
             </div>
-            <div class="row text-center navigation">
-                <div ng-class="{'nav-selected': location === 'home'}" class="col-md-2 col-sm-2 col-xs-2 nav-pill hvr-underline-from-left">
-                    <a class="nav-link text-white" href="#home">Home</a>
-                </div>
-                <div ng-class="{'nav-selected': location === 'about'}" class="col-md-2 col-sm-2 col-xs-2 nav-pill hvr-underline-from-left">
-                    <a class="nav-link text-white" href="#about">About</a>
-                </div>
-                <div ng-class="{'nav-selected': location === 'vision'}" class="col-md-2 col-sm-2 col-xs-2 nav-pill hvr-underline-from-left">
-                    <a class="nav-link text-white" href="#vision">Vision &amp; Values</a>
-                </div>
-                <div ng-class="{'nav-selected': location === 'skills'}" class="col-md-2 col-sm-2 col-xs-2 nav-pill hvr-underline-from-left">
-                    <a class="nav-link text-white" href="#skills">Skills</a>
-                </div>
-                <div ng-class="{'nav-selected': location === 'portfolio'}" class="col-md-2 col-sm-2 col-xs-2 nav-pill hvr-underline-from-left">
-                    <a class="nav-link text-white" href="#portfolio">Portfolio</a>
-                </div>
-                <div ng-class="{'nav-selected': location === 'blog'}" class="col-md-2 col-sm-2 col-xs-2  nav-pill hvr-underline-from-left">
-                    <a class="nav-link text-white" href="https://louisjohnbichard.wordpress.com">blog</a>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2">
+                    <div class="row text-center navigation">
+                        <div ng-class="{'nav-selected': location === 'home' || !location}" class="col-md-2 col-sm-2 col-xs-2 nav-pill hvr-underline-from-left">
+                            <a class="nav-link text-white" href="#home">Home</a>
+                        </div>
+                        <div ng-class="{'nav-selected': location === 'about'}" class="col-md-2 col-sm-2 col-xs-2 nav-pill hvr-underline-from-left">
+                            <a class="nav-link text-white" href="#about">About</a>
+                        </div>
+                        <div ng-class="{'nav-selected': location === 'vision'}" class="col-md-2 col-sm-2 col-xs-2 nav-pill hvr-underline-from-left">
+                            <a class="nav-link text-white" href="#vision">Vision</a> 
+                        </div>
+                        <div ng-class="{'nav-selected': location === 'skills'}" class="col-md-2 col-sm-2 col-xs-2 nav-pill hvr-underline-from-left">
+                            <a class="nav-link text-white" href="#skills">Skills</a>
+                        </div>
+                        <div ng-class="{'nav-selected': location === 'portfolio'}" class="col-md-2 col-sm-2 col-xs-2 nav-pill hvr-underline-from-left">
+                            <a class="nav-link text-white" href="#portfolio">Portfolio</a>
+                        </div>
+                        <div ng-class="{'nav-selected': location === 'blog'}" class="col-md-2 col-sm-2 col-xs-2  nav-pill hvr-underline-from-left">
+                            <a class="nav-link text-white" href="https://louisjohnbichard.wordpress.com">blog</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -88,6 +92,8 @@
                     </div>
                 </div>
                 <br>
+                <br>
+                <br>
                 <div class="row">
                     <div class="col-md-3 col-md-offset-3">
                         <p> 07506 934 678 </p>
@@ -102,24 +108,24 @@
     </div>
     <!-- #SCRIPTS -->
     <!-- ##BOWER PACKAGES -->
-    <script src="bower_components/jquery/dist/jquery.min.js?v=18"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js?v=18"></script>
-    <script src="bower_components/angular/angular.min.js?v=18"></script>
-    <script src="bower_components/angular-route/angular-route.min.js?v=18"></script>
-    <script src="bower_components/lodash/dist/lodash.min.js?v=18"></script>
-    <script src="bower_components/d3/d3.min.js?v=18"></script>
-    <script src="bower_components/angular-charts/dist/angular-charts.min.js?v=18"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.min.js?v=18"></script>
-    <script src="bower_components/angular-blog/angular-blog.js?v=18"></script>
-    <script src="bower_components/showdown/compressed/showdown.js?v=18"></script>
-    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js?v=18"></script>
-    <script src="bower_components/moment/min/moment.min.js?v=18"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js?v=19"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js?v=19"></script>
+    <script src="bower_components/angular/angular.min.js?v=19"></script>
+    <script src="bower_components/angular-route/angular-route.min.js?v=19"></script>
+    <script src="bower_components/lodash/dist/lodash.min.js?v=19"></script>
+    <script src="bower_components/d3/d3.min.js?v=19"></script>
+    <script src="bower_components/angular-charts/dist/angular-charts.min.js?v=19"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.min.js?v=19"></script>
+    <script src="bower_components/angular-blog/angular-blog.js?v=19"></script>
+    <script src="bower_components/showdown/compressed/showdown.js?v=19"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js?v=19"></script>
+    <script src="bower_components/moment/min/moment.min.js?v=19"></script>
     <!-- ##ANGULAR FRAMEWORKING -->
-    <script src="scripts/app.js?v=18"></script>
-    <script src="scripts/frontend.routes.js?v=18"></script>
-    <script src="scripts/portfolio.controller.js?v=18"></script>
-    <script src="scripts/main.controller.js?v=18"></script>
-    <script src="scripts/blog.controller.js?v=18"></script>
+    <script src="scripts/app.js?v=19"></script>
+    <script src="scripts/frontend.routes.js?v=19"></script>
+    <script src="scripts/portfolio.controller.js?v=19"></script>
+    <script src="scripts/main.controller.js?v=19"></script>
+    <script src="scripts/blog.controller.js?v=19"></script>
 </body>
 
 </html>

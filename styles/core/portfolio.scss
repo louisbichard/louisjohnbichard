@@ -1,0 +1,32 @@
+.portfolio_page {
+    .project_hover {
+        position: relative;
+        .project_content {
+            // -webkit-filter: blur(5px);
+            // -moz-filter: blur(5px);
+            // -o-filter: blur(5px);
+            // -ms-filter: blur(5px);
+            // filter: blur(5px);
+            color: black;
+            opacity: 0.92;
+            background-color: white;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            display: none;
+            transition: all .2s ease-in-out;
+            border-radius: 2px;
+            padding: 20px;
+        }
+        &:hover {
+            .project_content {
+                border-radius: 2px;
+                transition: all .2s ease-in-out;
+                border: 1px solid #d6d6d6;
+                display: block;
+            }
+        }
+    }
+}
