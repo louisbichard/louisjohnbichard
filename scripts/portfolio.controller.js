@@ -28,6 +28,11 @@ portfolio.controller('portfolioController', function($scope) {
             description: "HTML/CSS Website designed and created from Scratch for Moon Penny.",
             img: "../img/projects/moonpenny/landing.png",
             url: "#moonpenny"
+        }, {
+            title: "Flovigo",
+            description: "Angular based app for personal development (prototype) ",
+            img: "../img/projects/flovigo/flovigo.png",
+            url: "#flovigo"
         }],
     }, {
         name: 'Presentations / Talks',
