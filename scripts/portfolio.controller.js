@@ -62,6 +62,11 @@ portfolio.controller('portfolioController', function($scope) {
             description: "Demo's from the Thinkful course Front End Web Development",
             img: "../img/projects/fewd/thinkful_logo.png",
             url: "#front_end_web_development"
+        },{
+            title: "Thinkful: Data Science",
+            description: "Demo's from the Thinkful course: Data Science",
+            img: "../img/projects/fewd/thinkful_logo.png",
+            url: "#data_science"
         }]
     }, {
         name: 'Design',
