@@ -69,6 +69,10 @@ portfolio.config(function($routeProvider) {
         templateUrl: '../views/projects/flovigo.html'
     })
 
+    .when('/front_end_web_development', {
+        templateUrl: '../views/projects/front_end_web_development.html'
+    })
+
     .when('/absenteeism_booking', {
         templateUrl: '../views/projects/absenteeism_booking.html'
     })

@@ -56,6 +56,14 @@ portfolio.controller('portfolioController', function($scope) {
             url: "#reading"
         }]
     }, {
+        name: 'Courses',
+        projects: [{
+            title: "Thinkful: Front End Web Development",
+            description: "Demo's from the Thinkful course Front End Web Development",
+            img: "../img/projects/fewd/thinkful_logo.png",
+            url: "#front_end_web_development"
+        }]
+    }, {
         name: 'Design',
         projects: [{
             title: "Survivors United Designs",
