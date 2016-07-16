@@ -85,6 +85,10 @@ portfolio.config(function($routeProvider) {
         templateUrl: '../views/projects/brogrammer.html'
     })
 
+    .when('/exodus', {
+        templateUrl: '../views/projects/exodus.html'
+    })
+
     .when('/survivors_united', {
         templateUrl: '../views/projects/survivors_united.html'
     })
