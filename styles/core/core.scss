@@ -2,9 +2,12 @@
 // ##CORE COLOURS
 $color-main: #2196F3;
 $color-main-light: #64B5F6;
+$color-main-light-hover: #8dc9f9;
 $color-accent: #F50057;
 // ##UTILITY COLOURS
 $white: white;
+// ##UTILITY COLOUR
+$text-basic: black;
 // ##SHADOWS
 $shadow-high: 0 2px 2px rgba(0, 0, 0, 0.3);
 $shadow-mid: 0 1px 2px rgba(0, 0, 0, 0.16);
@@ -15,10 +18,14 @@ $window-xs: 0px;
 $window-sm: 768px;
 $window-md: 992px;
 $window-lg: 1200px;
+// #GREY SHADES
+$light-grey: #e4e4e4;
+$lightest-grey: #f7f7f7;
 // #IMPORTS 
 @import 'components.scss';
 @import 'typography.scss';
 @import 'reading.scss';
+@import 'portfolio.scss';
 // ## STYLE GUIDE
 .background-main {
     background-color: $color-main;

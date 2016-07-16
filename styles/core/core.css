@@ -116,6 +116,47 @@ p.note {
 .books {
   height: 25em; }
 
+.portfolio_page {
+  margin-top: 50px; }
+  .portfolio_page .left_nav.affix {
+    top: 30px; }
+  .portfolio_page .left_nav .section_header {
+    color: #64B5F6; }
+  .portfolio_page .left_nav .sub_section {
+    margin: 0px 20px 0px 0px;
+    padding: 5px 5px 5px 20px;
+    cursor: pointer; }
+    .portfolio_page .left_nav .sub_section.active, .portfolio_page .left_nav .sub_section:hover {
+      border-right: 1px solid #F50057;
+      background-color: #f7f7f7; }
+    .portfolio_page .left_nav .sub_section > a {
+      padding-left: 20px;
+      color: black;
+      border-left: 1px solid transparent; }
+    .portfolio_page .left_nav .sub_section > a:hover {
+      text-decoration: none; }
+  .portfolio_page .projects .content_panel {
+    cursor: pointer;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px solid #e4e4e4;
+    border-top: 1px solid #e4e4e4;
+    margin-bottom: -1px; }
+    .portfolio_page .projects .content_panel .project_title {
+      text-transform: uppercase;
+      font-weight: 400;
+      margin: 0px 0px 5px 0px; }
+    .portfolio_page .projects .content_panel .project_description {
+      margin-bottom: 25px;
+      opacity: 0.75; }
+    .portfolio_page .projects .content_panel:hover {
+      background-color: #f7f7f7; }
+    .portfolio_page .projects .content_panel .tags {
+      margin-top: 25px; }
+      .portfolio_page .projects .content_panel .tags .tag {
+        margin-right: 20px;
+        color: #F50057;
+        font-weight: 400; }
+
 .background-main {
   background-color: #2196F3; }
 

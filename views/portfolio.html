@@ -1,42 +1,40 @@
 <!-- #ALL PROJECTS -->
-<div ng-repeat="section in sections">
+<div class="portfolio_page">
     <div class="row">
-        <div class="col-md-12">
-
-            <h2 class="text-center"> {{section.name}} </h2>
-            <br>
-            <br>
-            <br>
-            <br>
-            
-                    <!-- ##PROJECTS -->
-            <div ng-repeat="project in section.projects">
-    
-                <div class="row">
-                    <div class="col-md-4 col-md-offset-1">
-                        <a href="{{project.url}}">
-                            <h3 class="text-center"> {{project.title}} </h3>
-                        </a>
-                        <br>
-                        <p> {{project.description}} </p>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="{{project.url}}">
-                            
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <img class="img-responsive" src="{{project.img}}">
-                                </div>
+        <div class="col-md-3">
+            <div class="left_nav" data-spy="affix" data-offset-top="170">
+                <div ng-repeat="section in sections">
+                    <h4 class="section_header">{{section.name}}</h4>
+                    <p class="sub_section" ng-repeat="project in section.projects" ng-click="goTo(project.url)" ng-class="{active: in_view === project.url}">
+                        {{project.title | limitTo: 25}} 
+                        {{project.title.length > 25 ? '...' : ''}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div ng-repeat="section in sections" class="projects">
+                <!-- ##PROJECTS -->
+                <div ng-repeat="project in section.projects">
+                    <div class="content_panel" ng-click="goTo(project.url)" data-url="{{project.url}}">
+                        
+                        <h2 class="project_title text-center"> {{project.title}} </h2>
+                        <p class="project_description text-center"> {{project.description}} </p>
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3">
+                                <img class="img-responsive " src="{{project.img}} ">
                             </div>
-                        </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="text-center tags"> 
+                                    <span class="tag" ng-repeat="tag in project.tags">#{{tag}}</span>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <br>
-                <br>
-                <br>
-                <br>
             </div>
-        </div>    
+        </div>
     </div>
-    <hr ng-if="($index + 1) !== sections.length">
 </div>

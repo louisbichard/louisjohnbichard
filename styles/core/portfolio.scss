@@ -1,31 +1,56 @@
 .portfolio_page {
-    .project_hover {
-        position: relative;
-        .project_content {
-            // -webkit-filter: blur(5px);
-            // -moz-filter: blur(5px);
-            // -o-filter: blur(5px);
-            // -ms-filter: blur(5px);
-            // filter: blur(5px);
-            color: black;
-            opacity: 0.92;
-            background-color: white;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            display: none;
-            transition: all .2s ease-in-out;
-            border-radius: 2px;
-            padding: 20px;
+    margin-top: 50px;
+    .left_nav {
+        &.affix {
+            top: 30px;
         }
-        &:hover {
-            .project_content {
-                border-radius: 2px;
-                transition: all .2s ease-in-out;
-                border: 1px solid #d6d6d6;
-                display: block;
+        .section_header {
+            color: $color-main-light;
+        }
+        .sub_section {
+            margin: 0px 20px 0px 0px;
+            padding: 5px 5px 5px 20px;
+            cursor: pointer;
+            &.active, &:hover {
+                border-right: 1px solid $color-accent;
+                background-color: $lightest-grey;
+            }
+            & > a {
+                padding-left: 20px;
+                color: $text-basic;
+                border-left: 1px solid transparent;
+            }
+            & > a:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    .projects {
+        .content_panel {
+            cursor: pointer;
+            padding: 50px 0px 50px 0px;
+            border-bottom: 1px solid $light-grey;
+            border-top: 1px solid $light-grey;
+            margin-bottom: -1px;
+            .project_title {
+                text-transform: uppercase;
+                font-weight: 400;
+                margin: 0px 0px 5px 0px;
+            }
+            .project_description  {
+                margin-bottom: 25px;
+                opacity: 0.75;
+            }
+            &:hover {
+                background-color: $lightest-grey;
+            }
+            .tags {
+                margin-top: 25px;
+                .tag {
+                    margin-right: 20px;
+                    color: $color-accent;
+                    font-weight: 400;
+                }
             }
         }
     }
