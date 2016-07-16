@@ -153,12 +153,20 @@ portfolio.controller('portfolioController', function($scope, $window, $timeout) 
         $window.location.href = '/' + state;
     };
 
+    $scope.scrollTo = function(data) {
+        var content_panel = $("body").find("[data-url='" + data + "']");
+
+        $('html, body').animate({
+            scrollTop: content_panel.offset().top
+        }, 1000);
+    };
+
     $(window).scroll(_.throttle(function() {
-        
+
         var panels = $(".content_panel");
         var in_view = _.filter(panels, withinviewport)[0]
-        $timeout(function(){
-            $scope.in_view = in_view.getAttribute('data-url');    
+        $timeout(function() {
+            $scope.in_view = in_view.getAttribute('data-url');
         });
 
     }, 500));
