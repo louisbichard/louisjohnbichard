@@ -3,6 +3,7 @@
     .left_nav {
         &.affix {
             top: 30px;
+            margin-bottom: 250px;
         }
         .section_header {
             color: $color-main-light;
@@ -11,9 +12,12 @@
             margin: 0px 20px 0px 0px;
             padding: 5px 5px 5px 20px;
             cursor: pointer;
-            &.active, &:hover {
+            &.active{
                 border-right: 1px solid $color-accent;
                 background-color: $lightest-grey;
+            }
+            &:hover  {
+                background-color: $lightest-grey;   
             }
             & > a {
                 padding-left: 20px;
