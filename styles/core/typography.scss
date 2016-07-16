@@ -5,6 +5,10 @@ body {
 h1, h2, h3, h4, h5, h6, li {
     font-weight: 300;
 }
+h2 {
+   text-transform: uppercase;
+    font-weight: 400;
+}
 p {
     font-weight: 300;
 }
@@ -18,3 +22,4 @@ p.note {
 .accent {
     color: $color-accent;
 }
+ 

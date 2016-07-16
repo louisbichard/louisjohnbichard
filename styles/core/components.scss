@@ -2,31 +2,45 @@
 // ##NAVIGATION
 .navbar {
     background-color: $color-main;
+    .website_title {
+        letter-spacing: 2px;
+        margin-bottom: 0px;
+    }
+    .strap_line {
+        color: $color-accent2;
+        margin-top: -2px;
+        letter-spacing: 3px;
+        font-weight: 300;
+        font-size: 1.2em;
+    }
     .navigation {
         color: $white;
         text-decoration: none;
         .hvr-underline-from-left:before {
-            background: $color-accent;
+            background: $color-accent2;
         }
         // HIDE THE ANIMATED BEFORE EVENT
         .nav-selected.hvr-underline-from-left:before {
             background: $color-main;
         }
-        .nav-pill:hover {
-            cursor: pointer;
-            a {
-                color: $color-accent;
-            }
-            a.nav-link:hover {
-                color: $color-accent;
+        .nav-pill {
+            letter-spacing: 2px;
+            &:hover {
+                cursor: pointer;
+                a {
+                    color: $color-accent2;
+                }
+                a.nav-link:hover {
+                    color: $color-accent2;
+                }
             }
         }
         .nav-selected {
             a {
-                color: $color-accent;
+                color: $color-accent2;
             }
             border-bottom-width: 4px;
-            border-bottom-color: $color-accent;
+            border-bottom-color: $color-accent2;
             border-bottom-style: solid;
             height: 55px;
         }
@@ -42,10 +56,10 @@
         }
         //height: 55px;
         .nav-selected > a {
-            color: $color-accent;
+            color: $color-accent2;
         }
         .nav-selected > a:hover {
-            color: $color-accent;
+            color: $color-accent2;
         }
         @media only screen and (min-width: $window-md) {
             .nav-pill {
@@ -79,42 +93,28 @@
 }
 
 .footer {
-    box-shadow: $shadow-top-mid;
-    background-color: #64B5F6;
+    .contact_text {
+        //color: red;
+    }
+    .fa {
+        color: white;
+        background-color: $color-main-lighter;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        padding-top: 10px;
+    }
+    background-color: $color-main-light;
     position: absolute;
     bottom: -152px;
     left: 0;
     width: 104%;
 }
 
-// ###HTML CORE ELEMENTS
-.angular-blog {
-    .blog-search {
-        width: 100%;
-    }
-    .blog-hr {
-        width: 100%;
-        border: none;
-        color: #333;
-        background-color: #333;
-        height: 3px;
-    }
-    .blog-metadata,
-    .blog-tags,
-    .blog-link {
-        color: $color-accent;
-        opacity: 54;
-    }
-}
-
-.blog-taglist {
-    cursor: pointer;
-}
-
 input {
     padding: 5px;
     border-top: 0px;
-    border-color: $color-accent;
+    border-color: $color-accent2;
     border-right: 0px;
     border-left: 0px;
 }
@@ -133,5 +133,5 @@ object.projectpdf {
 // BOOTSTRAP ACCORDIONS
 .panel-default>.panel-heading {
     background-color: white;
-    color: $color-accent;
+    color: $color-accent2;
 }
