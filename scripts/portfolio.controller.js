@@ -2,7 +2,7 @@ portfolio.controller('portfolioController', function($scope, $window, $timeout) 
 
     // PORTFOLIO PROJECTS
     $scope.sections = [{
-        name: 'Development',
+        name: 'Demo Apps',
         projects: [{
             title: "Survivors United",
             description: "Survivors United is a full Javascript MEAN dashboard application stack",
@@ -40,8 +40,38 @@ portfolio.controller('portfolioController', function($scope, $window, $timeout) 
             url: "#flovigo",
             tags: ["HTML", "UX", "Sass", "Angular"]
         }],
+    },  {
+        name: 'Open Source',
+        projects: [{
+            title: "Angular Progress Bar",
+            description: "Angular-progress bar is a directive based plugin for simple and elegant progress bars with a material design twist",
+            img: "../img/projects/angular-percentagebar/percentagebar1.png",
+            url: "#angular_percentagebar",
+            tags: ["Angular", "Open Source", "Javascript", "NPM"]
+        }, {
+            title: "Angular blog",
+            description: "Angular blog is a simple blog directive for parsing and creating markdown based blogs ",
+            img: "../img/projects/angular-blog/angular-blog.png",
+            url: "#angular_blog",
+            tags: ["Plugin", "Angular", "JS"]
+        }, {
+            title: "Exodus.js",
+            description: "A framework for front to back-end data sync",
+            img: "../img/projects/exodus/exodus.png",
+            url: "#exodus",
+            tags: ["DataSync", "nodeJS", "Javascript", "OpenSource"]
+        }]
     }, {
-        name: 'Presentations / Talks',
+        name: 'UX/ UI',
+        projects: [{
+            title: "Survivors United Designs",
+            description: "Survivors United is a full Javascript application stack",
+            img: "../img/projects/final_year_project/mock.jpg",
+            url: "#survivors_united_designs",
+            tags: ["UI", "Mock ups", "Wireframes", "Photoshop"]
+        }]
+    },{
+        name: 'Presentations',
         projects: [{
             title: "Lodash / Functional-esque programming talk",
             description: "A fairly low level short talk given on the context of functional programming and levarage / usage of Lodash methods (hosted on github)",
@@ -56,7 +86,7 @@ portfolio.controller('portfolioController', function($scope, $window, $timeout) 
             tags: ["Coffee", "Typescript", "Precompilers"]
         }]
     }, {
-        name: 'Learning',
+        name: 'Professional Development',
         projects: [{
             title: "Reading",
             description: "Notable books I have read",
@@ -80,36 +110,6 @@ portfolio.controller('portfolioController', function($scope, $window, $timeout) 
             img: "../img/euler.jpg",
             url: "//github.com/louisbichard/project_euler",
             tags: ["Python", "Ruby"]
-        }]
-    }, {
-        name: 'UX/ UI',
-        projects: [{
-            title: "Survivors United Designs",
-            description: "Survivors United is a full Javascript application stack",
-            img: "../img/projects/final_year_project/mock.jpg",
-            url: "#survivors_united_designs",
-            tags: ["UI", "Mock ups", "Wireframes", "Photoshop"]
-        }]
-    }, {
-        name: 'Open Source',
-        projects: [{
-            title: "Angular Progress Bar",
-            description: "Angular-progress bar is a directive based plugin for simple and elegant progress bars with a material design twist",
-            img: "../img/projects/angular-percentagebar/percentagebar1.png",
-            url: "#angular_percentagebar",
-            tags: ["Angular", "Open Source", "Javascript", "NPM"]
-        }, {
-            title: "Angular blog",
-            description: "Angular blog is a simple blog directive for parsing and creating markdown based blogs ",
-            img: "../img/projects/angular-blog/angular-blog.png",
-            url: "#angular_blog",
-            tags: ["Plugin", "Angular", "JS"]
-        },{
-            title: "Exodus.js",
-            description: "A framework for front to back-end data sync",
-            img: "../img/projects/exodus/exodus.png",
-            url: "#exodus",
-            tags: ["DataSync", "nodeJS", "Javascript", "OpenSource"]
         }]
     }, {
         name: 'Authored Work',
@@ -153,7 +153,7 @@ portfolio.controller('portfolioController', function($scope, $window, $timeout) 
     };
 
     $scope.goTo = function(state, external) {
-        if(!external) $window.location.href = '/' + state;
+        if (!external) $window.location.href = '/' + state;
         else window.href = state;
     };
 
@@ -175,7 +175,7 @@ portfolio.controller('portfolioController', function($scope, $window, $timeout) 
 
     }, 500));
 
-    $scope.$on('$destroy', function(){
+    $scope.$on('$destroy', function() {
         $(window).unbind('.portfolio');
     });
 });
