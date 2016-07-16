@@ -133,9 +133,9 @@ p.note {
     cursor: pointer; }
     .portfolio_page .left_nav .sub_section.active {
       border-right: 1px solid #F50057;
-      background-color: #f7f7f7; }
+      background-color: #f9f9f9; }
     .portfolio_page .left_nav .sub_section:hover {
-      background-color: #f7f7f7; }
+      background-color: #f9f9f9; }
     .portfolio_page .left_nav .sub_section > a {
       padding-left: 20px;
       color: black;
@@ -153,7 +153,7 @@ p.note {
       margin-bottom: 25px;
       opacity: 0.75; }
     .portfolio_page .projects .content_panel:hover {
-      background-color: #f7f7f7; }
+      background-color: #f9f9f9; }
     .portfolio_page .projects .content_panel .tags {
       margin-top: 25px; }
       .portfolio_page .projects .content_panel .tags .tag {
