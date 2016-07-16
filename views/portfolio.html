@@ -16,7 +16,7 @@
             <div ng-repeat="section in sections" class="projects">
                 <!-- ##PROJECTS -->
                 <div ng-repeat="project in section.projects">
-                    <div class="content_panel" ng-click="goTo(project.url, project.url_external)" data-url="{{project.url}}">
+                    <div class="content_panel hvr-grow" ng-click="goTo(project.url, project.url_external)" data-url="{{project.url}}">
                         
                         <h2 class="project_title text-center"> {{project.title}} </h2>
                         <p class="project_description text-center"> {{project.description}} </p>
