@@ -77,12 +77,14 @@ portfolio.controller('portfolioController', function($scope, $window, $timeout) 
             description: "A fairly low level short talk given on the context of functional programming and levarage / usage of Lodash methods (hosted on github)",
             img: "../img/projects/presentations/functional.png",
             url: "http://louisbichard.github.io/lodash-talk",
+            url_external: true,
             tags: ["Lodash", "Underscore", "Functional", "DRY"]
         }, {
             title: "Precompilers talk",
             description: "An introduction given on the benefits and issues with precompilers in relation to JS in particular. Covers the usage of CoffeeScript, TypeScript and ES2015 (Babel specifically)",
             img: "../img/projects/blogs/code.png",
             url: "http://louisbichard.github.io/precompilers-talk/#/",
+            url_external: true,
             tags: ["Coffee", "Typescript", "Precompilers"]
         }]
     }, {
