@@ -156,7 +156,7 @@ portfolio.controller('portfolioController', function($scope, $window, $timeout) 
 
     $scope.goTo = function(state, external) {
         if (!external) $window.location.href = '/' + state;
-        else window.href = state;
+        else window.location.href = state;
     };
 
     $scope.scrollTo = function(data) {
