@@ -155,6 +155,9 @@ portfolio.controller('portfolioController', function($scope, $window, $timeout) 
     };
 
     $scope.goTo = function(state, external) {
+
+        console.log(state, external)
+
         if (!external) $window.location.href = '/' + state;
         else window.location.href = state;
     };
