@@ -77,6 +77,10 @@ portfolio.config(function($routeProvider) {
         templateUrl: '../views/projects/front_end_web_development.html'
     })
 
+    .when('/flexible_web_development', {
+        templateUrl: '../views/projects/flexible_web_development.html'
+    })
+
     .when('/absenteeism_booking', {
         templateUrl: '../views/projects/absenteeism_booking.html'
     })

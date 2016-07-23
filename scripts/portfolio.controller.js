@@ -107,10 +107,17 @@ portfolio.controller('portfolioController', function($scope, $window, $timeout) 
             url: "#data_science",
             tags: ["Data", "Python", "Big data", "SQL", "Analytics", "Statistics"]
         }, {
+            title: "Flexible web development",
+            description: "Advanced web development principles",
+            img: "../img/projects/fewd/thinkful_logo.png",
+            url: "#flexible_web_development",
+            tags: ["Object Oriented Programming", "MVC"]
+        }, {
             title: "Project Euler",
             description: "Project Euler is a collection of mathmatical based problems to be solved through programming. The following are my solutions in varying languages",
             img: "../img/euler.jpg",
             url: "//github.com/louisbichard/project_euler",
+            url_external: true,
             tags: ["Python", "Ruby"]
         }]
     }, {
