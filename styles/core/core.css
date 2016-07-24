@@ -1,4 +1,5 @@
 .navbar {
+  margin-bottom: -1px;
   background-color: #2196F3; }
   .navbar .website_title {
     letter-spacing: 2px;
@@ -160,6 +161,27 @@ p.note {
         margin-right: 20px;
         color: #F50057;
         font-weight: 400; }
+
+.about-page .image-full-width {
+  display: inline-block;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  .about-page .image-full-width.bench {
+    background-image: url("../../img/personal/bench_bw.jpg");
+    height: calc(100vh - 300px);
+    background-position-y: -218px;
+    background-position-x: -200px; }
+  .about-page .image-full-width.waterski {
+    background-image: url("../../img/personal/wakejump.jpg");
+    height: calc(100vh - 300px);
+    background-size: cover;
+    margin-bottom: -143px; }
+  .about-page .image-full-width.code {
+    background-position-y: -50px;
+    background-image: url("../../img/personal/code.png");
+    height: calc(100vh - 300px);
+    background-size: cover; }
 
 .background-main {
   background-color: #2196F3; }

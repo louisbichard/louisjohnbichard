@@ -1,0 +1,26 @@
+.about-page {
+    .image-full-width {
+        display: inline-block;
+        &.bench {
+            background-image: url("../../img/personal/bench_bw.jpg");
+            height: calc(100vh - 300px);
+            background-position-y: -218px;
+            background-position-x: -200px;
+        }
+        &.waterski {
+            background-image: url("../../img/personal/wakejump.jpg");
+            height: calc(100vh - 300px);
+            background-size: cover;
+            margin-bottom: -143px;
+        }
+        &.code {
+            background-position-y: -50px;
+            background-image: url("../../img/personal/code.png");
+            height: calc(100vh - 300px);
+            background-size: cover;
+        }
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}

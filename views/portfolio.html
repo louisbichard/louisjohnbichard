@@ -1,35 +1,37 @@
 <!-- #ALL PROJECTS -->
-<div class="portfolio_page">
-    <div class="row">
-        <div class="col-xs-3">
-            <div class="left_nav" bs-affix data-offset-top="170">
-                <div ng-repeat="section in sections">
-                    <h4 class="section_header">{{section.name}}</h4>
-                    <p class="sub_section" ng-repeat="project in section.projects" ng-click="scrollTo(project.url)" ng-class="{active: in_view === project.url}">
-                        {{project.title | limitTo: 25}} 
-                        {{project.title.length > 25 ? '...' : ''}}
-                    </p>
+<div class="container">
+    <div class="portfolio_page">
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="left_nav" bs-affix data-offset-top="170">
+                    <div ng-repeat="section in sections">
+                        <h4 class="section_header">{{section.name}}</h4>
+                        <p class="sub_section" ng-repeat="project in section.projects" ng-click="scrollTo(project.url)" ng-class="{active: in_view === project.url}">
+                            {{project.title | limitTo: 25}} 
+                            {{project.title.length > 25 ? '...' : ''}}
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-xs-8 col-xs-offset-1">
-            <div ng-repeat="section in sections" class="projects">
-                <!-- ##PROJECTS -->
-                <div ng-repeat="project in section.projects">
-                    <div class="content_panel hvr-grow" ng-click="goTo(project.url, project.url_external)" data-url="{{project.url}}">
-                        
-                        <h2 class="project_title text-center"> {{project.title}} </h2>
-                        <p class="project_description text-center"> {{project.description}} </p>
-                        <div class="row">
-                            <div class="col-xs-6 col-xs-offset-3">
-                                <img class="img-responsive " ng-src="{{project.img}} ">
+            <div class="col-xs-8 col-xs-offset-1">
+                <div ng-repeat="section in sections" class="projects">
+                    <!-- ##PROJECTS -->
+                    <div ng-repeat="project in section.projects">
+                        <div class="content_panel hvr-grow" ng-click="goTo(project.url, project.url_external)" data-url="{{project.url}}">
+                            
+                            <h2 class="project_title text-center"> {{project.title}} </h2>
+                            <p class="project_description text-center"> {{project.description}} </p>
+                            <div class="row">
+                                <div class="col-xs-6 col-xs-offset-3">
+                                    <img class="img-responsive " ng-src="{{project.img}} ">
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <p class="text-center tags"> 
-                                    <span class="tag" ng-repeat="tag in project.tags">#{{tag}}</span>
-                                </p>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <p class="text-center tags"> 
+                                        <span class="tag" ng-repeat="tag in project.tags">#{{tag}}</span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
