@@ -3,13 +3,17 @@
   background-color: #2196F3; }
   .navbar .website_title {
     letter-spacing: 2px;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 1.2em; }
   .navbar .strap_line {
     color: #1DE9B6;
     margin-top: -2px;
     letter-spacing: 3px;
     font-weight: 300;
-    font-size: 1.2em; }
+    font-size: 1em;
+    margin-bottom: 15px; }
   .navbar .navigation {
     color: white;
     text-decoration: none; }
@@ -18,7 +22,8 @@
     .navbar .navigation .nav-selected.hvr-underline-from-left:before {
       background: #2196F3; }
     .navbar .navigation .nav-pill {
-      letter-spacing: 2px; }
+      letter-spacing: 2px;
+      padding-bottom: 10px; }
       .navbar .navigation .nav-pill:hover {
         cursor: pointer; }
         .navbar .navigation .nav-pill:hover a {
@@ -29,29 +34,17 @@
       border-bottom-width: 4px;
       border-bottom-color: #1DE9B6;
       border-bottom-style: solid;
-      height: 55px; }
+      height: 30px; }
       .navbar .navigation .nav-selected a {
         color: #1DE9B6; }
-    @media only screen and (max-width: 992px) {
-      .navbar .navigation .nav-selected {
-        height: 55px; } }
-    @media only screen and (max-width: 768px) {
-      .navbar .navigation .nav-selected {
-        height: 45px; } }
     .navbar .navigation .nav-selected > a {
       color: #1DE9B6; }
     .navbar .navigation .nav-selected > a:hover {
       color: #1DE9B6; }
-    @media only screen and (min-width: 992px) {
-      .navbar .navigation .nav-pill {
-        padding: 15px; } }
-    @media only screen and (max-width: 992px) {
-      .navbar .navigation .nav-pill {
-        padding: 10px; } }
     .navbar .navigation .nav-link {
-      padding: 5px;
+      padding: 10px 5px 5px 5px;
       font-weight: 400;
-      font-size: 18;
+      font-size: 14;
       text-transform: uppercase;
       text-decoration: none; }
     .navbar .navigation .nav-link:visited {
@@ -72,10 +65,19 @@
   .footer .fa {
     color: white;
     border: 2px solid #90CAF9;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     border-radius: 50px;
     padding-top: 10px; }
+  .footer .fa {
+    color: white;
+    border: 2px solid #90CAF9;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    padding-top: 10px; }
+    .footer .fa:hover {
+      background-color: #2196F3; }
 
 input {
   padding: 5px;
@@ -95,6 +97,9 @@ object.projectpdf {
 .panel-default > .panel-heading {
   background-color: white;
   color: #1DE9B6; }
+
+.contact_text {
+  margin-top: 10px; }
 
 body {
   font-family: 'Roboto', sans-serif; }
@@ -175,8 +180,7 @@ p.note {
   .about-page .image-full-width.waterski {
     background-image: url("../../img/personal/wakejump.jpg");
     height: calc(100vh - 300px);
-    background-size: cover;
-    margin-bottom: -143px; }
+    background-size: cover; }
   .about-page .image-full-width.code {
     background-position-y: -50px;
     background-image: url("../../img/personal/code.png");

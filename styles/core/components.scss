@@ -6,13 +6,17 @@
     .website_title {
         letter-spacing: 2px;
         margin-bottom: 0px;
+        margin-top: 15px;
+        text-transform: uppercase;
+        font-size: 1.2em;
     }
     .strap_line {
         color: $color-accent2;
         margin-top: -2px;
         letter-spacing: 3px;
         font-weight: 300;
-        font-size: 1.2em;
+        font-size: 1em;
+        margin-bottom: 15px;
     }
     .navigation {
         color: $white;
@@ -26,6 +30,7 @@
         }
         .nav-pill {
             letter-spacing: 2px;
+            padding-bottom: 10px;
             &:hover {
                 cursor: pointer;
                 a {
@@ -43,17 +48,7 @@
             border-bottom-width: 4px;
             border-bottom-color: $color-accent2;
             border-bottom-style: solid;
-            height: 55px;
-        }
-        @media only screen and (max-width: $window-md) {
-            .nav-selected {
-                height: 55px;
-            }
-        }
-        @media only screen and (max-width: $window-sm) {
-            .nav-selected {
-                height: 45px;
-            }
+            height: 30px;
         }
         //height: 55px;
         .nav-selected > a {
@@ -62,20 +57,10 @@
         .nav-selected > a:hover {
             color: $color-accent2;
         }
-        @media only screen and (min-width: $window-md) {
-            .nav-pill {
-                padding: 15px;
-            }
-        }
-        @media only screen and (max-width: $window-md) {
-            .nav-pill {
-                padding: 10px;
-            }
-        }
         .nav-link {
-            padding: 5px;
+            padding: 10px 5px 5px 5px;
             font-weight: 400;
-            font-size: 18;
+            font-size: 14;
             text-transform: uppercase;
             text-decoration: none;
         }
@@ -100,12 +85,23 @@
     .fa {
         color: white;
         border: 2px solid #90CAF9;
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
         border-radius: 50px;
         padding-top: 10px;
     }
-    background-color: $color-main-light;    
+    .fa {
+        &:hover {
+            background-color: $color-main;
+        }        
+        color: white;
+        border: 2px solid #90CAF9;
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+        padding-top: 10px;
+    }
+    background-color: $color-main-light;
     position: absolute;
     bottom: -152px;
     left: 0;
@@ -135,4 +131,8 @@ object.projectpdf {
 .panel-default>.panel-heading {
     background-color: white;
     color: $color-accent2;
+}
+
+.contact_text {
+    margin-top: 10px;
 }
