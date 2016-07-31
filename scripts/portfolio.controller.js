@@ -2,13 +2,19 @@ portfolio.controller('portfolioController', function($scope, $window, $timeout) 
 
     // PORTFOLIO PROJECTS
     $scope.sections = [{
-        name: 'Demo Apps',
+        name: 'Applications',
         projects: [{
             title: "Survivors United",
             description: "Survivors United is a full Javascript MEAN dashboard application stack",
             img: "../img/projects/final_year_project/coffeehouse_laptop.jpg",
             url: "#survivors_united",
             tags: ["Angular", "NodeJS", "Express", "TDD"]
+        },{
+            title: "Foursquare",
+            description: "A front-end only demo application made for an interview process using the foursquare API.",
+            img: "todo",
+            url: "#foursquare",
+            tags: ["APIs", "Angular1.x", "Javascript", "HTML", "UX/UI", "Design", "Agile"]
         }, {
             title: "Absenteeism booking",
             description: "A demo application for booking absenteeism (Angular)",

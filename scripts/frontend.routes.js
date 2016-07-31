@@ -53,6 +53,10 @@ portfolio.config(function($routeProvider) {
         templateUrl: '../views/projects/angular_blog.html'
     })
 
+    .when('/foursquare', {
+        templateUrl: '../views/projects/foursquare.html'
+    })
+
     .when('/xml_site', {
         templateUrl: '../views/projects/xml_site.html'
     })
