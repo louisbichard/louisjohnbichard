@@ -12,7 +12,7 @@ portfolio.controller('portfolioController', function($scope, $window, $timeout) 
         },{
             title: "Foursquare",
             description: "A front-end only demo application made for an interview process using the foursquare API.",
-            img: "todo",
+            img: "../img/projects/foursquare/foursquare.png",
             url: "#foursquare",
             tags: ["APIs", "Angular1.x", "Javascript", "HTML", "UX/UI", "Design", "Agile"]
         }, {

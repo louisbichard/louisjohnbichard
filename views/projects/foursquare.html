@@ -91,33 +91,36 @@
     <hr>
 
     <h2>Design</h2>
-
-    <h3>The design steps</h3>
     
-    <p>My design process incorporated a lot of the steps of a full UI / UX process, this was of course not as in depth as I would have liked, but gives an idea of how I like to design products </p>
-    <ol>
-        <li>
-            <strong>Data review: </strong>
-            What data do we have? Ratings? Images? What types of content are we delivering? How much data is there?
-         </li>
-        <li>
-            <strong>Existing design review: </strong>
-            Look at other designs / UI mock ups that people have made for design inspiration. I identified what was liked / disliked about each design, and ideas that I wanted to incorporate into my own design
-         </li>
-        <li>
-            <strong>Sketching: </strong>
-            Whilst looking at other ideas I would sketch different ideas that I had, so I wouldn't forget them, but also so that I could see on paper whether I liked the direction the design it was heading. 
-         </li>
-        <li>
-            <strong>Created a design tile: </strong> 
-            <!--  TODO: -->
-        </li>
-    </ol>
+    <h3>Data review</h3>
+    <p> What data do we have? Ratings? Images? What types of content are we delivering? How much data is there? </p>
 
+    <h3>Existing design review</h3>
+    <p> Look at other designs / UI mock ups that people have made for design inspiration. I identified what was liked / disliked about each design, and ideas that I wanted to incorporate into my own design </p>
 
-    <h3>Overall outcome from the design process</h3>
+    <br>
+    <object height="600px" width="100%" data="../../assets/foursquare.pdf" type="application/pdf">
+        <p>
+            It appears you don't have a PDF plugin for this browser. You can <a href="myfile.pdf">click here to download the PDF file.</a>
+        </p>
+    </object>    
+    <br>
+
+    <h3>Sketching</h3>
+    <p> Whilst looking at other ideas I would sketch different ideas that I had, so I wouldn't forget them, but also so that I could see on paper whether I liked the direction the design it was heading. </p>
+    <br>
+
+    <div class="row">
+        <div class="col-md-6" ng-repeat="index in [1, 2, 3, 4]">
+            <img width="100%" src="../../img/projects/foursquare/sketch{{index}}.jpg" alt="">
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <h3>Design process outcome</h3>
     <ul>
-        <li>Liked the map on the right ideas</li>
+        <li>Really liked the map-on-the-right format for the UI, seemed to be consistent across major apps</li>
         <li>Most apps didn't cater for different journeys / searching types, this would be <span class="accent">a really delightful feature [2]</span></li>
     </ul>
 
@@ -136,10 +139,18 @@
     <hr>
 
     <h2>Build / Features</h2>
+    
+    <br>
+        <img width="100%" src="../../img/projects/foursquare/foursquare.png" alt="">
+    <br>
 
     <h3>Performance</h3>    
 
     <p>The search to the <span class="accent">foursquare API [3]</span>  is debounced so that the user is given 500ms to stop typing before a request is made, giving the user time to enter their search term fully before getting their resultset. </p>
+
+    <br>
+    <img src="../../img/projects/foursquare/debounce.png" alt="" width="100%">
+    <br>
 
     <h3>Animations</h3>    
 
@@ -149,6 +160,18 @@
 
     <p>The interface is broken up into separate components, for instance the results is comprised of restaurant tiles, with this approach the content can be moved around VERY easily, keeping the <span class="accent" > architecture flexible and agile friendly [6]</span> </p>
 
+    <br>
+    <img src="../../img/projects/foursquare/components.png" alt="" width="100%">
+    <br>
+
+
+    <h3>Flexible style guide</h3>    
+
+    <p>As above the styles are created as isolated variables, meaning that all changes are propogated throughout the appliation keeping the <span class="accent" > architecture flexible and agile friendly [6]</span> </p>
+    
+    <br>
+    <img src="../../img/projects/foursquare/styles.png" alt="" width="100%">
+    <br>
 
     <hr>
 
