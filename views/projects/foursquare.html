@@ -5,17 +5,59 @@
     <h1> Foursquare demo </h1>
     <p> A demo app using the foursquare API </p>
 
+    <p>
+        The code can be found on <a href="https://github.com/louisbichard/foursquare-demo"><strong>Github</strong></a>
+    </p>
+
+    <p>
+        The live demo is hosted on <a href="https://louisbichard.github.io/foursquare-demo/"><strong>Github Pages</strong></a>
+    </p>
+
     <!-- Reiterate the requirements specification and refer back to it -->
 
     <hr>
 
     <h2>Overview</h2>
 
+    <h3>How I found the process / creating the demo</h3>
+
     <p>This was a challenging piece, really testing my design eye, ability to sketch, code and build!</p>
-    <p>Time pressures made it particularly enjoyable as I tested myself to not try and be too "perfectionist" and to prize getting the feature complete, as the agile methodology promotes.</p>
+
+    <h3>Difficult parts</h3>
+    <p>Time pressures made it particularly enjoyable as I tested myself to not try and be too "perfectionist" and to prize getting the app complete, as the agile methodology promotes.</p>
+
+    <h3>Good parts</h3>
     <p>It's always nice to do a full end to end design and build as I notice that I'm often a lot more efficient and comfortable with what the steps are that I want to take and what it takes to build a really strong product.</p>
     <!-- Talk about what it was, how you did each step, what and why you did them that way -->
-    <!-- What I liked about the process, getting to do design / UX / Thinking about users / journeys -->
+
+    <hr>
+    <h2>Approach</h2>
+    
+    <!-- Talk about how you planned, what you did in the planning phase etc -->
+    <!-- Did this to re-iterate the design back to those who created it, since it's not iterative this would have been communicated back to the client -->
+        <!-- With technical tasks always best to reiterate back to the requirements owner in your own words what you think you're building -->
+        <!-- Talk about the *why* you did everything that you did -->
+
+    <h3>Lean methodology</h3>
+    <p>Started with sketching designs, moved to wireframes then moved to full build </p>
+    <p>Taking an <span class="accent">agile approach [6]</span> and by doing these sketches / UI designs can avoid wasting time on a costly build, being patient in design pays off later. </p>
+        <!-- Talk about throw way  -->
+    <h3>Process</h3>
+    <br>
+    <ol>
+        <li>Requirements dissemination</li>
+        <!-- Removed all the verabage -->
+        <!-- De-ambigious the wording, make it more clear and explicit -->
+        <li>Design</li>
+        <li>Technology choice</li>
+        <li>Build</li>
+        <!-- Something about component based approach -->
+        <!-- Small chunks for reusable -->
+        <!--  Link back to the requirements and how you did each part and why you did each bit -->
+        <!-- Justify the technology choice, why you went for Angular, easy, you already know it, sass why you chose sass (agile benefits) -->
+        <li>Known defects</li>
+        <li>Improvements / out of scope</li>
+    </ol>    
     
     <hr>
 
@@ -44,40 +86,7 @@
     </ol>
 
 
-    <hr>
-    <h2>Approach</h2>
-    
-    <!-- Talk about how you planned, what you did in the planning phase etc -->
-    <!-- Did this to re-iterate the design back to those who created it, since it's not iterative this would have been communicated back to the client -->
-        <!-- With technical tasks always best to reiterate back to the requirements owner in your own words what you think you're building -->
-        <!-- Talk about the *why* you did everything that you did -->
 
-    <h3>Lean methodology</h3>
-    <p>Started with sketching designs, moved to wireframes then moved to full build </p>
-    <p>Taking an <span class="accent">agile approach [6]</span> and by doing these sketches / UI designs can avoid wasting time on a costly build, being patient in design pays off later. </p>
-        <!-- Talk about throw way  -->
-    <h3>Process</h3>
-    <p>The steps I took into creating a full product</p>
-    <br>
-    <ol>
-        <li>Requirements dissemination</li>
-        <!-- Removed all the verabage -->
-        <!-- De-ambigious the wording, make it more clear and explicit -->
-        
-        <li>Created a backlog / todo list</li>
-        <li>Prioritising</li>
-        <li>Design</li>
-        <li>Build</li>
-        <!-- Something about component based approach -->
-        <!-- Small chunks for reusable -->
-        <li>Justifications of design / </li>
-        <!--  Link back to the requirements and how you did each part and why you did each bit -->
-        <!-- Justify the technology choice, why you went for Angular, easy, you already know it, sass why you chose sass (agile benefits) -->
-        <li>Review / Clean up</li>
-        <li>Review / Clean up</li>
-        <!-- Future scope / ideas -->
-        <!-- What works / what doesn't work -->
-    </ol>    
 
     <hr>
 
@@ -105,6 +114,7 @@
         </li>
     </ol>
 
+
     <h3>Overall outcome from the design process</h3>
     <ul>
         <li>Liked the map on the right ideas</li>
@@ -112,13 +122,60 @@
     </ul>
 
     <hr>
-    <h2>Out of scope</h2>
-    <h3>Performance</h3>
-    <p>Below are some features that I would have liked to have added or a performance benefit</p>
-    <h4>Infinite scroll</h4>
-    <p>The foursquare app has a "see more results" button at the bottom of their list, this is nice as it segments and paginates which helps the interface load fast, but the user has to click to see the results, an infinite scroll here would be much nicer and not require the user to have to click to see more results, simply scroll.</p>
+
+    <h2>Technology choice</h2>
+
+    <h3>Angular</h3>
+
+    <p>I chose to build the app with Angular as this is a framework I've been working with a considerable amount in the past few years, so building flexible and clean architectures is a very quick process for me currently.</p>
+
+    <h3>SASS</h3>
+
+    <p>Sass is used for the styling, this helps to keep things neat within the component-based approach, all colours / shadows / transitions are controlled by single global variables meaning that the style guide of the architecture is flexible. Update one value for the colour and this will propogate to the rest of the app with a single change <span class="accent">[6]</span></p>
+
+    <hr>
+
+    <h2>Build / Features</h2>
+
+    <h3>Performance</h3>    
+
+    <p>The search to the <span class="accent">foursquare API [3]</span>  is debounced so that the user is given 500ms to stop typing before a request is made, giving the user time to enter their search term fully before getting their resultset. </p>
+
+    <h3>Animations</h3>    
+
+    <p>On load the left panel animates in from the left</p>
+
+    <h3>Component based approach</h3>    
+
+    <p>The interface is broken up into separate components, for instance the results is comprised of restaurant tiles, with this approach the content can be moved around VERY easily, keeping the <span class="accent" > architecture flexible and agile friendly [6]</span> </p>
+
+
+    <hr>
+
+    <h2>Known defects</h2>
+    <h3>Drag / Click on map</h3>
+    <p>Drag / Clicking is not currently working, as the z-index of the map container is affected in order to overlay the search, an alternative was not found within the deadline time</p>
+
+    <hr>
+
+    <h2>Improvements / Out of scope</h2>
     
-        
+    <h3>Infinite scroll</h3>
+
+    <p>The foursquare app has a "see more results" button at the bottom of their list, this is nice as it segments and paginates which helps the interface load fast, but the user has to click to see the results, an infinite scroll here would be much nicer and not require the user to have to click to see more results, simply scroll.</p>
+
+    <h3>Typeahead</h3>
+    <p>An autocomplete / typeahead would improve the UX when searching for items</p>
+
+    <h3>Groupings / Filters</h3>
+    <p>Groupings based on categories and simple filters under the search box</p>
+
+    <h3>Alternative card based UI</h3>
+    <p>Rather than map centric UI, a card based UI would allow the user to expand the search list to view extra details in a non location centric interface</p>
+
+    <h3>Responsive UI</h3>
+    <p>The left search panel is currently fixed width meaning smaller resolution devices do not get any meaningful UX</p>    
+
     
 
         <!-- Went onto dribble and found websites similar for inspiration -->
