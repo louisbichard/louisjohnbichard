@@ -3,7 +3,7 @@
 <br>
 <div class="container">
     <h1> Foursquare demo </h1>
-    <p> A demo app using the foursquare API </p>
+    <p> <strong>Description: </strong>A demo app using the foursquare API </p>
 
     <p>
         The code can be found on <a href="https://github.com/louisbichard/foursquare-demo"><strong>Github</strong></a>
@@ -19,57 +19,45 @@
 
     <h2>Overview</h2>
 
-    <h3>How I found the process / creating the demo</h3>
-
     <p>This was a challenging piece, really testing my design eye, ability to sketch, code and build!</p>
 
-    <h3>Difficult parts</h3>
-    <p>Time pressures made it particularly enjoyable as I tested myself to not try and be too "perfectionist" and to prize getting the app complete, as the agile methodology promotes.</p>
-
-    <h3>Good parts</h3>
-    <p>It's always nice to do a full end to end design and build as I notice that I'm often a lot more efficient and comfortable with what the steps are that I want to take and what it takes to build a really strong product.</p>
-    <!-- Talk about what it was, how you did each step, what and why you did them that way -->
-
-    <hr>
-    <h2>Approach</h2>
-    
-    <!-- Talk about how you planned, what you did in the planning phase etc -->
-    <!-- Did this to re-iterate the design back to those who created it, since it's not iterative this would have been communicated back to the client -->
-        <!-- With technical tasks always best to reiterate back to the requirements owner in your own words what you think you're building -->
-        <!-- Talk about the *why* you did everything that you did -->
-
-    <h3>Lean methodology</h3>
-    <p>Started with sketching designs, moved to wireframes then moved to full build </p>
-    <p>Taking an <span class="accent">agile approach [6]</span> and by doing these sketches / UI designs can avoid wasting time on a costly build, being patient in design pays off later. </p>
-        <!-- Talk about throw way  -->
-    <h3>Process</h3>
     <br>
     <ol>
+        <li>Approach</li>
         <li>Requirements dissemination</li>
-        <!-- Removed all the verabage -->
-        <!-- De-ambigious the wording, make it more clear and explicit -->
         <li>Design</li>
         <li>Technology choice</li>
         <li>Build</li>
-        <!-- Something about component based approach -->
-        <!-- Small chunks for reusable -->
-        <!--  Link back to the requirements and how you did each part and why you did each bit -->
-        <!-- Justify the technology choice, why you went for Angular, easy, you already know it, sass why you chose sass (agile benefits) -->
         <li>Known defects</li>
         <li>Improvements / out of scope</li>
-    </ol>    
+    </ol>
+    
+    <!-- Talk about what it was, how you did each step, what and why you did them that way -->
+
+    <hr>
+    <h2>1. Approach</h2>    
+
+    <h3>Full end to end approach</h3>
+    <p>Whilst there wasn't much time in this process, I wanted to really do a mini end to end build, incorporating as many aspects that I use in a full design process</p>
+    <p>My process for delivering this type of application / feature would not change, but given more time I would have spent a little more time on each of the phases of the design using different prototype methods and creating alternative mock interfaces and using tools such as A/B testing to work out the best designs. </p>
+    <p>I was conscious and didn't want to just 'dive into' the project. I wanted to spend the time thinking about the users, the user journeys etc. This was obviously difficult without having direct access to any customer as this is a mocked scenario, but lets pretend that I did, and stages such as the design sketches were put through iterations and review as would be standard in a larger process. </p>
+
+
+    <h3>Lean methodology</h3>
+    <p>It is important to me not to just dive into the build of such an application as this is a sure fire way to waste time if I don't have a clear idea of what I'm doing. </p>
+    <p>Instead, I started with the cheapest method: pen and pencil to sketch out ideas I had seen from other similiar applications, given more time this would have worked into other cheap methods of testing and validating hypothesis </p>
     
     <hr>
 
-    <h2>Requirements</h2>    
+    <h2>2. Requirements</h2>    
     <p>Below are my rewriting of the requirements as they were delivered to me</p>
     <p>I believe the process of disecting the requirements given to you is extremely important as it helps you to recommunicate back to the requirements owner that you have really understood their requirements. </p>
     <h3>The requirements </h3>
     <p>These requirements will be referred back to throughout this document to show how each one was considered and thought about in the process of creating this app.</p>
-    <p>This will be denoted with an accented number in square brackets like so: <span class="accent"> a delightful UI! [2]</span></p>
+
     <ol>
         <li>Display autonomy</li>
-        <li>Delightful</li>
+        <li>Delightful UI/UX</li>
         <!-- You should summarise what you mean by this -->
         <li>Foursquare API: Search for a place by name &amp; return recommended / popular venues near that location </li>
         <li>Displaying of the results / the interface</li>
@@ -90,9 +78,22 @@
 
     <hr>
 
-    <h2>Design</h2>
+    <h2>3. Design</h2>
     
     <h3>Data review</h3>
+    <p> The first step was to review the data that was made available, this would shape the content of the design, was the API returning content in the form of images, text etc. </p>
+    <p> By asking these questions I was able to shape and form the rest of the design process in which the size / form of the data was important to how the interface was created. </p>
+    <p>Questions that were asked at this phase were: </p>
+    <ul>
+        <li>Will we need to make subsequent requests to fetch further data, what API's would these be? </li>  
+        <li>Which information is the most important and what should be given UI prominence? </li>
+        <li>Could all the information be displayed on a tile, or would expand / redirecting be required for extra information? </li>
+        <li>What call to actions would the user take?</li>
+        <li>Would the result set be large enough to require pagination?</li>
+        <li>Would the content need to be scrollable if there is too much of it? </li>
+        <li>What is the hierarchical structure of the data, is there a logical 'king' piece of content</li>
+        <li>What groupings would the content take?</li>
+    </ul>
     <p> What data do we have? Ratings? Images? What types of content are we delivering? How much data is there? </p>
 
     <h3>Existing design review</h3>
@@ -109,14 +110,17 @@
     <h3>Sketching</h3>
     <p> Whilst looking at other ideas I would sketch different ideas that I had, so I wouldn't forget them, but also so that I could see on paper whether I liked the direction the design it was heading. </p>
     <br>
-
+    
     <div class="row">
-        <div class="col-md-6" ng-repeat="index in [1, 2, 3, 4]">
+        <div class="col-md-3" ng-repeat="index in [1, 2, 3, 4]">
             <img width="100%" src="../../img/projects/foursquare/sketch{{index}}.jpg" alt="">
             <br>
             <br>
         </div>
     </div>
+
+    <h3>User journey considerations</h3>
+    <p>Whilst this phase was not formally conducted, I did some thinking around the types of users that would enter the application and the types of journeys that these users were likely to take, this meant looking at other apps and trying to work out how they had innovatively solved some of these user Journeys. </p>
 
     <h3>Design process outcome</h3>
     <ul>
@@ -126,11 +130,16 @@
 
     <hr>
 
-    <h2>Technology choice</h2>
+    <h2>4. Technology choices</h2>
+
+    <h3>Bower</h3>
+
+    <p>Bower is used to install app dependencies, keeping versioning clean and ensuring libraries can be updated easily.</p>
 
     <h3>Angular</h3>
 
     <p>I chose to build the app with Angular as this is a framework I've been working with a considerable amount in the past few years, so building flexible and clean architectures is a very quick process for me currently.</p>
+    <p>Not much of angular was leveraged in this project however if the app were to grow in the future, the beginning framework is already in place. </p>
 
     <h3>SASS</h3>
 
@@ -138,10 +147,15 @@
 
     <hr>
 
-    <h2>Build / Features</h2>
+    <h2>5. Build / Features</h2>
     
     <br>
-        <img width="100%" src="../../img/projects/foursquare/foursquare.png" alt="">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <img class="shadow-high " width="100%" src="../../img/projects/foursquare/foursquare.png" alt="">
+        </div>        
+    </div>
+        
     <br>
 
     <h3>Performance</h3>    
@@ -149,7 +163,12 @@
     <p>The search to the <span class="accent">foursquare API [3]</span>  is debounced so that the user is given 500ms to stop typing before a request is made, giving the user time to enter their search term fully before getting their resultset. </p>
 
     <br>
-    <img src="../../img/projects/foursquare/debounce.png" alt="" width="100%">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <img class="shadow-high" src="../../img/projects/foursquare/debounce.png" alt="" width="100%">    
+        </div>
+    </div>
+    
     <br>
 
     <h3>Animations</h3>    
@@ -161,27 +180,31 @@
     <p>The interface is broken up into separate components, for instance the results is comprised of restaurant tiles, with this approach the content can be moved around VERY easily, keeping the <span class="accent" > architecture flexible and agile friendly [6]</span> </p>
 
     <br>
-    <img src="../../img/projects/foursquare/components.png" alt="" width="100%">
-    <br>
 
+    <img class="shadow-high" src="../../img/projects/foursquare/components.png" alt="" width="100%">
+    <br>
 
     <h3>Flexible style guide</h3>    
 
     <p>As above the styles are created as isolated variables, meaning that all changes are propogated throughout the appliation keeping the <span class="accent" > architecture flexible and agile friendly [6]</span> </p>
     
     <br>
-    <img src="../../img/projects/foursquare/styles.png" alt="" width="100%">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <img class="shadow-high" src="../../img/projects/foursquare/styles.png" alt="" width="100%">
+        </div>
+    </div>
     <br>
 
     <hr>
 
-    <h2>Known defects</h2>
+    <h2>6. Known defects</h2>
     <h3>Drag / Click on map</h3>
     <p>Drag / Clicking is not currently working, as the z-index of the map container is affected in order to overlay the search, an alternative was not found within the deadline time</p>
 
     <hr>
 
-    <h2>Improvements / Out of scope</h2>
+    <h2>7. Improvements / Out of scope</h2>
     
     <h3>Infinite scroll</h3>
 
@@ -191,23 +214,13 @@
     <p>An autocomplete / typeahead would improve the UX when searching for items</p>
 
     <h3>Groupings / Filters</h3>
-    <p>Groupings based on categories and simple filters under the search box</p>
+    <p>I wanted to really dive into the user journies and start to understand what types of tasks they were trying to achieve, one way that this would probably manifest is some clever filters or groupings that allow the user to quickly reduce the result sets into amounts that they require.</p>
 
     <h3>Alternative card based UI</h3>
-    <p>Rather than map centric UI, a card based UI would allow the user to expand the search list to view extra details in a non location centric interface</p>
+    <p>Rather than map centric UI, a card based UI would allow the user to expand the search list to view extra details in a non location centric interface.</p>
+    <p>This was a feature that I identified as a nice-to-have in the design process when reviewing other sites.</p>
 
     <h3>Responsive UI</h3>
     <p>The left search panel is currently fixed width meaning smaller resolution devices do not get any meaningful UX</p>    
 
-    
-
-        <!-- Went onto dribble and found websites similar for inspiration -->
-        <!-- Include the design document in here too -->
-        <!-- Would do user journeys here in order to identify types of users and their use cases, how they would search -->
-        <!-- This helps to build user empathy? -->
-
-
-
-    <!-- Something about using wunderlist -->
-    <!-- Add wunderlist screenshot -->
 </div>
