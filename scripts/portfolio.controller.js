@@ -106,19 +106,20 @@ portfolio.controller('portfolioController', function($scope, $window, $timeout) 
             img: "../img/projects/fewd/thinkful_logo.png",
             url: "#front_end_web_development",
             tags: ["JS", "CSS", "HTML", "Accessibility", "Mentoring"]
-        }, {
-            title: "Data Science",
-            description: "Demo's from the Thinkful course: Data Science",
-            img: "../img/projects/fewd/thinkful_logo.png",
-            url: "#data_science",
-            tags: ["Data", "Python", "Big data", "SQL", "Analytics", "Statistics"]
-        }, {
-            title: "Flexible web development",
-            description: "Advanced web development principles",
-            img: "../img/projects/fewd/thinkful_logo.png",
-            url: "#flexible_web_development",
-            tags: ["Object Oriented Programming", "MVC"]
-        }, {
+         }, //{
+        //     title: "Data Science",
+        //     description: "Demo's from the Thinkful course: Data Science",
+        //     img: "../img/projects/fewd/thinkful_logo.png",
+        //     url: "#data_science",
+        //     tags: ["Data", "Python", "Big data", "SQL", "Analytics", "Statistics"]
+        // }, {
+        //     title: "Flexible web development",
+        //     description: "Advanced web development principles",
+        //     img: "../img/projects/fewd/thinkful_logo.png",
+        //     url: "#flexible_web_development",
+        //     tags: ["Object Oriented Programming", "MVC"]
+        // }, 
+        {
             title: "Project Euler",
             description: "Project Euler is a collection of mathmatical based problems to be solved through programming. The following are my solutions in varying languages",
             img: "../img/euler.jpg",
