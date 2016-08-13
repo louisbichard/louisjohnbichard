@@ -16,6 +16,7 @@
         text-transform: uppercase;
         &:hover {
             text-decoration: none;
+            background-color: $color-accent-dark;
         }
     }
     .header_logo {
