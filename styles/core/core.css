@@ -3,8 +3,21 @@
   width: 100%; }
 
 .navbar {
+  position: relative;
   margin-bottom: -1px;
   background-color: white; }
+  .navbar .typeform-share {
+    position: absolute;
+    right: 20px;
+    z-index: 1;
+    top: 20px;
+    background-color: #F50057;
+    color: white;
+    padding: 10px 10px 10px;
+    border-radius: 3px;
+    text-transform: uppercase; }
+    .navbar .typeform-share:hover {
+      text-decoration: none; }
   .navbar .header_logo {
     display: block;
     margin-left: auto;

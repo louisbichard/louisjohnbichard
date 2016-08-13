@@ -1,8 +1,23 @@
 // #COMPONENTS
 // ##NAVIGATION
 .navbar {
+    position: relative;
     margin-bottom: -1px;
     background-color: white;
+    .typeform-share {
+        position: absolute;
+        right: 20px;
+        z-index: 1;
+        top: 20px;
+        background-color: #F50057;
+        color: white;
+        padding: 10px 10px 10px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        &:hover {
+            text-decoration: none;
+        }
+    }
     .header_logo {
         display: block;
         margin-left: auto;
