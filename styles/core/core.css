@@ -1,5 +1,6 @@
 .home-component {
   height: calc(100% - 200px);
+  overflow-y: scroll;
   width: 100%; }
 
 .navbar {
@@ -81,6 +82,7 @@
   position: relative; }
 
 .footer {
+  background-color: #fff;
   color: #2196F3;
   border-top: 1px solid #cecece;
   position: absolute;

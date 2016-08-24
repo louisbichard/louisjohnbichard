@@ -1,6 +1,7 @@
 .home-component {
     //background-image: url('../../img/ljb_laptop.jpg');
     height: calc(100% - 200px);
+    overflow-y: scroll;
     // background-repeat: no-repeat;
     width: 100%;
     // background-size: cover;
